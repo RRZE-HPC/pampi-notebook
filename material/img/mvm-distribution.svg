@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 275" width="780" height="275" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <rect width="780" height="275" rx="12" fill="#fcfcfb"/>
+
+  <rect x="40" y="30" width="30" height="50" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="55" y="60" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">0</tspan></text>
+  <rect x="40" y="80" width="30" height="50" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="55" y="110" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">1</tspan></text>
+  <rect x="40" y="130" width="30" height="50" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="55" y="160" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">2</tspan></text>
+  <rect x="40" y="180" width="30" height="50" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="55" y="210" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">3</tspan></text>
+  <text x="55" y="258" text-anchor="middle" font-size="16" font-weight="bold" font-style="italic" fill="#0b0b0b">y</text>
+  <text x="95" y="138" text-anchor="middle" font-size="24" fill="#0b0b0b">=</text>
+  <rect x="120" y="30" width="30" height="50" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="135" y="60" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">0</tspan></text>
+  <rect x="120" y="80" width="30" height="50" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="135" y="110" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">1</tspan></text>
+  <rect x="120" y="130" width="30" height="50" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="135" y="160" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">2</tspan></text>
+  <rect x="120" y="180" width="30" height="50" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="135" y="210" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">y<tspan font-size="9.1" dy="3" font-style="normal">3</tspan></text>
+  <text x="135" y="258" text-anchor="middle" font-size="16" font-weight="bold" font-style="italic" fill="#0b0b0b">y</text>
+  <text x="180" y="138" text-anchor="middle" font-size="24" fill="#0b0b0b">+</text>
+  <rect x="210" y="30" width="50" height="50" fill="#e3edfa" stroke="#2a78d6" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="235" y="60" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">00</tspan></text>
+  <rect x="260" y="30" width="50" height="50" fill="#e3edfa" stroke="#2a78d6" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="285" y="60" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">01</tspan></text>
+  <rect x="310" y="30" width="50" height="50" fill="#e3edfa" stroke="#2a78d6" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="335" y="60" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">02</tspan></text>
+  <rect x="360" y="30" width="50" height="50" fill="#e3edfa" stroke="#2a78d6" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="385" y="60" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">03</tspan></text>
+  <rect x="210" y="30" width="200" height="50" fill="none" stroke="#2a78d6" stroke-width="2"/>
+  <rect x="210" y="80" width="50" height="50" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="235" y="110" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">10</tspan></text>
+  <rect x="260" y="80" width="50" height="50" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="285" y="110" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">11</tspan></text>
+  <rect x="310" y="80" width="50" height="50" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="335" y="110" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">12</tspan></text>
+  <rect x="360" y="80" width="50" height="50" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="385" y="110" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">13</tspan></text>
+  <rect x="210" y="80" width="200" height="50" fill="none" stroke="#d97a1e" stroke-width="2"/>
+  <rect x="210" y="130" width="50" height="50" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="235" y="160" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">20</tspan></text>
+  <rect x="260" y="130" width="50" height="50" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="285" y="160" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">21</tspan></text>
+  <rect x="310" y="130" width="50" height="50" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="335" y="160" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">22</tspan></text>
+  <rect x="360" y="130" width="50" height="50" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="385" y="160" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">23</tspan></text>
+  <rect x="210" y="130" width="200" height="50" fill="none" stroke="#2f9a5b" stroke-width="2"/>
+  <rect x="210" y="180" width="50" height="50" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="235" y="210" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">30</tspan></text>
+  <rect x="260" y="180" width="50" height="50" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="285" y="210" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">31</tspan></text>
+  <rect x="310" y="180" width="50" height="50" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="335" y="210" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">32</tspan></text>
+  <rect x="360" y="180" width="50" height="50" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1" stroke-opacity="0.45"/>
+  <text x="385" y="210" text-anchor="middle" font-size="13" fill="#52514e" font-style="italic">A<tspan font-size="9.1" dy="3" font-style="normal">33</tspan></text>
+  <rect x="210" y="180" width="200" height="50" fill="none" stroke="#8a5cc2" stroke-width="2"/>
+  <text x="310" y="258" text-anchor="middle" font-size="16" font-weight="bold" font-style="italic" fill="#0b0b0b">A</text>
+  <text x="435" y="138" text-anchor="middle" font-size="24" fill="#0b0b0b">·</text>
+  <rect x="460" y="30" width="30" height="50" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="475" y="60" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">x<tspan font-size="9.1" dy="3" font-style="normal">0</tspan></text>
+  <rect x="460" y="80" width="30" height="50" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="475" y="110" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">x<tspan font-size="9.1" dy="3" font-style="normal">1</tspan></text>
+  <rect x="460" y="130" width="30" height="50" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="475" y="160" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">x<tspan font-size="9.1" dy="3" font-style="normal">2</tspan></text>
+  <rect x="460" y="180" width="30" height="50" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="475" y="210" text-anchor="middle" font-size="13" fill="#0b0b0b" font-style="italic">x<tspan font-size="9.1" dy="3" font-style="normal">3</tspan></text>
+  <text x="475" y="258" text-anchor="middle" font-size="16" font-weight="bold" font-style="italic" fill="#0b0b0b">x</text>
+  <text x="545" y="48" font-size="14" font-weight="bold" fill="#0b0b0b">data owned by</text>
+  <rect x="545" y="62" width="18" height="18" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="573" y="76" font-size="14" fill="#0b0b0b">rank 0</text>
+  <rect x="545" y="90" width="18" height="18" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="573" y="104" font-size="14" fill="#0b0b0b">rank 1</text>
+  <rect x="545" y="118" width="18" height="18" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="573" y="132" font-size="14" fill="#0b0b0b">rank 2</text>
+  <rect x="545" y="146" width="18" height="18" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="573" y="160" font-size="14" fill="#0b0b0b">rank 3</text>
+  <text x="545" y="200" font-size="12.5" fill="#52514e">Each rank stores a block of rows</text>
+  <text x="545" y="217" font-size="12.5" fill="#52514e">of A and the matching chunks of</text>
+  <text x="545" y="234" font-size="12.5" fill="#52514e">y and x. To compute its part of y,</text>
+  <text x="545" y="251" font-size="12.5" fill="#52514e">it needs all chunks of x.</text>
+</svg>

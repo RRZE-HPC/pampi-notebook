@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 140" width="780" height="140" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/>
+    </marker>
+  </defs>
+  <rect width="780" height="140" rx="12" fill="#fcfcfb"/>
+  <g font-size="14" text-anchor="middle" fill="#0b0b0b">
+    <text x="112" y="31" font-weight="bold">rank 0</text>
+    <text x="297" y="31" font-weight="bold">rank 1</text>
+    <text x="482" y="31" font-weight="bold">rank 2</text>
+    <text x="667" y="31" font-weight="bold">rank 3</text>
+  </g>
+  <g fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5">
+    <rect x="30" y="40" width="165" height="58" rx="8"/>
+    <rect x="215" y="40" width="165" height="58" rx="8"/>
+    <rect x="400" y="40" width="165" height="58" rx="8"/>
+    <rect x="585" y="40" width="165" height="58" rx="8"/>
+  </g>
+  <g font-size="14" text-anchor="middle" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">
+    <rect x="42" y="54" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="112" y="74">buf</text>
+    <rect x="227" y="54" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="297" y="74">buf</text>
+    <rect x="412" y="54" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="482" y="74">buf</text>
+    <rect x="597" y="54" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="667" y="74">buf</text>
+  </g>
+  <g fill="none" stroke="#2a78d6" stroke-width="2" marker-end="url(#arr)">
+    <path d="M183,69 H224"/>
+    <path d="M368,69 H409"/>
+    <path d="M553,69 H594"/>
+    <path d="M738,69 H762 V116 H16 V69 H39"/>
+  </g>
+  <text x="390" y="132" text-anchor="middle" font-size="12" fill="#52514e">the content of buf is sent away and replaced by the message received — same buffer, count and datatype</text>
+</svg>
