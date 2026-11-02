@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" width="780" height="380" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/></marker>
+  </defs>
+  <rect width="780" height="380" rx="12" fill="#fcfcfb"/>
+  <text x="229" y="34" font-size="13" fill="#52514e" text-anchor="middle">rank 0</text>
+  <text x="379" y="34" font-size="13" fill="#52514e" text-anchor="middle">rank 1</text>
+  <text x="529" y="34" font-size="13" fill="#52514e" text-anchor="middle">rank 2</text>
+  <text x="679" y="34" font-size="13" fill="#52514e" text-anchor="middle">rank 3</text>
+  <text x="20" y="63" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="bold">before</text>
+  <text x="20" y="79" font-size="11.5" fill="#52514e" text-anchor="start">root has chunks A–D</text>
+  <rect x="170" y="52" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="184" y="68.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="200" y="52" width="28" height="24" rx="3" fill="#eb6834" stroke="none"/>
+  <text x="214" y="68.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="230" y="52" width="28" height="24" rx="3" fill="#1baf7a" stroke="none"/>
+  <text x="244" y="68.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="260" y="52" width="28" height="24" rx="3" fill="#eda100" stroke="none"/>
+  <text x="274" y="68.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <rect x="320" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="350" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="380" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="410" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="470" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="500" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="530" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="560" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="620" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="650" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="680" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="710" y="52" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="20" y="121" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="bold">after scatter</text>
+  <text x="20" y="137" font-size="11.5" fill="#52514e" text-anchor="start">binomial tree, ⌈log₂ p⌉ steps</text>
+  <rect x="170" y="110" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="184" y="126.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="200" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="230" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="260" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="320" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="350" y="110" width="28" height="24" rx="3" fill="#eb6834" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="364" y="126.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="380" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="410" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="470" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="500" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="530" y="110" width="28" height="24" rx="3" fill="#1baf7a" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="544" y="126.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="560" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="620" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="650" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="680" y="110" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="710" y="110" width="28" height="24" rx="3" fill="#eda100" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="724" y="126.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <text x="20" y="179" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="bold">allgather step 1</text>
+  <text x="20" y="195" font-size="11.5" fill="#52514e" text-anchor="start">ring: send n/p to the right</text>
+  <line x1="20" y1="154" x2="760" y2="154" stroke="#e4e3df" stroke-width="1.5"/>
+  <rect x="170" y="168" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="184" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="200" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="230" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="260" y="168" width="28" height="24" rx="3" fill="#eda100" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="274" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="292" y1="180" x2="314" y2="180" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="320" y="168" width="28" height="24" rx="3" fill="#2a78d6" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="334" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="350" y="168" width="28" height="24" rx="3" fill="#eb6834" stroke="none"/>
+  <text x="364" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="380" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="410" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <line x1="442" y1="180" x2="464" y2="180" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="470" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="500" y="168" width="28" height="24" rx="3" fill="#eb6834" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="514" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="530" y="168" width="28" height="24" rx="3" fill="#1baf7a" stroke="none"/>
+  <text x="544" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="560" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <line x1="592" y1="180" x2="614" y2="180" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="620" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="650" y="168" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="680" y="168" width="28" height="24" rx="3" fill="#1baf7a" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="694" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="710" y="168" width="28" height="24" rx="3" fill="#eda100" stroke="none"/>
+  <text x="724" y="184.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <path d="M679.0,194 V202 H229.0 V198" fill="none" stroke="#52514e" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+  <text x="20" y="237" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="bold">allgather step 2</text>
+  <text x="20" y="253" font-size="11.5" fill="#52514e" text-anchor="start">n/p</text>
+  <rect x="170" y="226" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="184" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="200" y="226" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="230" y="226" width="28" height="24" rx="3" fill="#1baf7a" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="244" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="260" y="226" width="28" height="24" rx="3" fill="#eda100" stroke="none"/>
+  <text x="274" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="292" y1="238" x2="314" y2="238" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="320" y="226" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="334" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="350" y="226" width="28" height="24" rx="3" fill="#eb6834" stroke="none"/>
+  <text x="364" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="380" y="226" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="410" y="226" width="28" height="24" rx="3" fill="#eda100" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="424" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="442" y1="238" x2="464" y2="238" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="470" y="226" width="28" height="24" rx="3" fill="#2a78d6" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="484" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="500" y="226" width="28" height="24" rx="3" fill="#eb6834" stroke="none"/>
+  <text x="514" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="530" y="226" width="28" height="24" rx="3" fill="#1baf7a" stroke="none"/>
+  <text x="544" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="560" y="226" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <line x1="592" y1="238" x2="614" y2="238" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="620" y="226" width="28" height="24" rx="3" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <rect x="650" y="226" width="28" height="24" rx="3" fill="#eb6834" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="664" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="680" y="226" width="28" height="24" rx="3" fill="#1baf7a" stroke="none"/>
+  <text x="694" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="710" y="226" width="28" height="24" rx="3" fill="#eda100" stroke="none"/>
+  <text x="724" y="242.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <path d="M679.0,252 V260 H229.0 V256" fill="none" stroke="#52514e" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+  <text x="20" y="295" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="bold">allgather step 3</text>
+  <text x="20" y="311" font-size="11.5" fill="#52514e" text-anchor="start">n/p</text>
+  <rect x="170" y="284" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="184" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="200" y="284" width="28" height="24" rx="3" fill="#eb6834" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="214" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="230" y="284" width="28" height="24" rx="3" fill="#1baf7a" stroke="none"/>
+  <text x="244" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="260" y="284" width="28" height="24" rx="3" fill="#eda100" stroke="none"/>
+  <text x="274" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="292" y1="296" x2="314" y2="296" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="320" y="284" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="334" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="350" y="284" width="28" height="24" rx="3" fill="#eb6834" stroke="none"/>
+  <text x="364" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="380" y="284" width="28" height="24" rx="3" fill="#1baf7a" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="394" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="410" y="284" width="28" height="24" rx="3" fill="#eda100" stroke="none"/>
+  <text x="424" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="442" y1="296" x2="464" y2="296" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="470" y="284" width="28" height="24" rx="3" fill="#2a78d6" stroke="none"/>
+  <text x="484" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="500" y="284" width="28" height="24" rx="3" fill="#eb6834" stroke="none"/>
+  <text x="514" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="530" y="284" width="28" height="24" rx="3" fill="#1baf7a" stroke="none"/>
+  <text x="544" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="560" y="284" width="28" height="24" rx="3" fill="#eda100" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="574" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="592" y1="296" x2="614" y2="296" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="620" y="284" width="28" height="24" rx="3" fill="#2a78d6" stroke="#0b0b0b" stroke-width="2"/>
+  <text x="634" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="650" y="284" width="28" height="24" rx="3" fill="#eb6834" stroke="none"/>
+  <text x="664" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="680" y="284" width="28" height="24" rx="3" fill="#1baf7a" stroke="none"/>
+  <text x="694" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="710" y="284" width="28" height="24" rx="3" fill="#eda100" stroke="none"/>
+  <text x="724" y="300.5" font-size="12" fill="#fcfcfb" text-anchor="middle" font-weight="bold">D</text>
+  <path d="M679.0,310 V318 H229.0 V314" fill="none" stroke="#52514e" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+  <text x="195" y="344" font-size="12.5" fill="#0b0b0b" text-anchor="middle">scatter: ⌈log₂ p⌉ α + (p−1)/p · nβ</text>
+  <text x="420" y="344" font-size="12.5" fill="#0b0b0b" text-anchor="middle">ring allgather: (p−1) α + (p−1)/p · nβ</text>
+  <text x="625" y="344" font-size="12.5" fill="#0b0b0b" text-anchor="middle">total ≈ 2nβ instead of ⌈log₂ p⌉ · nβ</text>
+  <text x="390" y="368" font-size="12.5" fill="#52514e" text-anchor="middle">Long-message broadcast (van de Geijn) for p = 4: the message is cut into p chunks; outlined chunks were received in this step</text>
+</svg>
