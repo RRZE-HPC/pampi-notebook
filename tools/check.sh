@@ -86,6 +86,33 @@ EOF
     fi
 fi
 
+echo "CUDA (only needed for the CUDA notebook, requires an NVIDIA GPU)"
+if command -v nvcc >/dev/null 2>&1; then
+    cat > "$tmp/cuda.cu" <<'EOF'
+#include <stdio.h>
+__global__ void add(int *x) { atomicAdd(x, 1); }
+int main(void) {
+    int *x, n = 0;
+    if (cudaMalloc(&x, sizeof(int)) != cudaSuccess) return 1;
+    cudaMemcpy(x, &n, sizeof(int), cudaMemcpyHostToDevice);
+    add<<<4, 64>>>(x);
+    cudaMemcpy(&n, x, sizeof(int), cudaMemcpyDeviceToHost);
+    cudaFree(x);
+    return n != 256;
+}
+EOF
+    if ! nvcc -arch=native -o "$tmp/cuda" "$tmp/cuda.cu" > "$tmp/log" 2>&1; then
+        warn "nvcc cannot compile a CUDA program (is there a GPU on this node?):"
+        sed 's/^/        /' "$tmp/log"
+    elif ! "$tmp/cuda"; then
+        warn "a CUDA program compiled, but did not run correctly - is there a GPU on this node?"
+    else
+        ok "compiled and ran a CUDA kernel ($(nvcc --version | tail -n 1))"
+    fi
+else
+    warn "nvcc not found - the CUDA cells will be skipped (on a cluster: load the CUDA module on a GPU node)"
+fi
+
 echo "Python environment"
 if [ -x "$venv/bin/python" ]; then
     if out=$("$venv/bin/python" -c 'import jupyterlab, matplotlib, numpy, sys; print(sys.version.split()[0])' 2>&1); then

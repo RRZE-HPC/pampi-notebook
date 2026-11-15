@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 290" width="780" height="290" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0b0b0b"/>
+    </marker>
+  </defs>
+  <rect width="780" height="290" rx="12" fill="#fcfcfb"/>
+
+  <!-- ===== decomposition ===== -->
+  <text x="25" y="34" font-size="15" font-weight="bold" fill="#0b0b0b">domain decomposition</text>
+  <g fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5">
+    <rect x="25"  y="55" width="52" height="38"/><rect x="81"  y="55" width="52" height="38"/><rect x="137" y="55" width="52" height="38"/><rect x="193" y="55" width="52" height="38"/>
+    <rect x="25"  y="97" width="52" height="38"/><rect x="81"  y="97" width="52" height="38"/><rect x="137" y="97" width="52" height="38"/><rect x="193" y="97" width="52" height="38"/>
+    <rect x="25"  y="139" width="52" height="38"/><rect x="81"  y="139" width="52" height="38"/><rect x="137" y="139" width="52" height="38"/><rect x="193" y="139" width="52" height="38"/>
+  </g>
+  <g font-size="13" text-anchor="middle" fill="#52514e">
+    <text x="51" y="79">0</text><text x="107" y="79">1</text><text x="163" y="79">2</text><text x="219" y="79">3</text>
+    <text x="51" y="121">4</text><text x="107" y="121">5</text><text x="163" y="121">6</text><text x="219" y="121">7</text>
+    <text x="51" y="163">8</text><text x="107" y="163">9</text><text x="163" y="163">10</text><text x="219" y="163">11</text>
+  </g>
+  <g font-size="12.5" fill="#52514e">
+    <text x="25" y="205">2D domain distributed to 4 × 3 ranks,</text>
+    <text x="25" y="222">each rank owns one tile</text>
+  </g>
+
+  <!-- ===== tile with halo ===== -->
+  <text x="285" y="34" font-size="15" font-weight="bold" fill="#0b0b0b">tile with ghost cells</text>
+  <rect x="290" y="60" width="170" height="120" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <rect x="305" y="75" width="140" height="90" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="375" y="125" text-anchor="middle" font-size="13" fill="#0b0b0b">own cells</text>
+  <g font-size="12.5" fill="#52514e">
+    <text x="285" y="205">the ghost cells (halo) hold copies</text>
+    <text x="285" y="222">of the neighbors' boundary cells</text>
+  </g>
+
+  <!-- ===== exchange ===== -->
+  <text x="490" y="34" font-size="15" font-weight="bold" fill="#0b0b0b">ghost cell exchange</text>
+  <rect x="490" y="60" width="125" height="120" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <rect x="500" y="70" width="105" height="100" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <rect x="591" y="70" width="14" height="100" fill="#9cc0ec" stroke="#2a78d6" stroke-width="1.5"/>
+  <rect x="605" y="70" width="10" height="100" fill="#f0b47a"/>
+  <rect x="645" y="60" width="125" height="120" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5" stroke-dasharray="6 3"/>
+  <rect x="655" y="70" width="105" height="100" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <rect x="655" y="70" width="14" height="100" fill="#9cc0ec" stroke="#2a78d6" stroke-width="1.5"/>
+  <rect x="645" y="70" width="10" height="100" fill="#f0b47a"/>
+  <text x="545" y="127" text-anchor="middle" font-size="20" font-weight="bold" fill="#0b0b0b">i</text>
+  <text x="715" y="127" text-anchor="middle" font-size="20" font-weight="bold" fill="#0b0b0b">j</text>
+  <path d="M598,90 C598,44 650,44 650,86" fill="none" stroke="#0b0b0b" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M662,150 C662,196 610,196 610,154" fill="none" stroke="#0b0b0b" stroke-width="2" marker-end="url(#arr)"/>
+  <g font-size="12.5" fill="#0b0b0b">
+    <text x="490" y="228"><tspan font-weight="bold">1</tspan>  copy the boundary layer into a send buffer</text>
+    <text x="490" y="246"><tspan font-weight="bold">2</tspan><tspan dx="6" font-family="Menlo, Consolas, monospace" font-size="11.5">MPI_Sendrecv()</tspan> with the neighbor</text>
+    <text x="490" y="264"><tspan font-weight="bold">3</tspan>  copy the receive buffer into the ghost cells</text>
+  </g>
+</svg>

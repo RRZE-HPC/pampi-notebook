@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 385" width="780" height="385" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/></marker>
+  </defs>
+  <rect width="780" height="385" rx="12" fill="#fcfcfb"/>
+  <text x="22" y="64" font-size="12" fill="#52514e" text-anchor="middle">step</text>
+  <text x="22" y="96" font-size="12.5" fill="#52514e" text-anchor="middle">1</text>
+  <text x="22" y="130" font-size="12.5" fill="#52514e" text-anchor="middle">2</text>
+  <text x="22" y="164" font-size="12.5" fill="#52514e" text-anchor="middle">3</text>
+  <text x="22" y="198" font-size="12.5" fill="#52514e" text-anchor="middle">4</text>
+  <text x="22" y="232" font-size="12.5" fill="#52514e" text-anchor="middle">5</text>
+  <text x="22" y="266" font-size="12.5" fill="#52514e" text-anchor="middle">6</text>
+  <text x="22" y="300" font-size="12.5" fill="#52514e" text-anchor="middle">7</text>
+  <line x1="22" y1="312" x2="22" y2="326" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="60" y="30" font-size="13.5" fill="#0b0b0b" text-anchor="start" font-weight="bold">linear: the root sends p − 1 = 7 times</text>
+  <text x="74" y="64" font-size="12" fill="#52514e" text-anchor="middle">0</text>
+  <text x="112" y="64" font-size="12" fill="#52514e" text-anchor="middle">1</text>
+  <text x="150" y="64" font-size="12" fill="#52514e" text-anchor="middle">2</text>
+  <text x="188" y="64" font-size="12" fill="#52514e" text-anchor="middle">3</text>
+  <text x="226" y="64" font-size="12" fill="#52514e" text-anchor="middle">4</text>
+  <text x="264" y="64" font-size="12" fill="#52514e" text-anchor="middle">5</text>
+  <text x="302" y="64" font-size="12" fill="#52514e" text-anchor="middle">6</text>
+  <text x="340" y="64" font-size="12" fill="#52514e" text-anchor="middle">7</text>
+  <rect x="59" y="66" width="30" height="246" rx="8" fill="#2a78d6" fill-opacity="0.10"/>
+  <path d="M79,84 Q93.0,61 108,83" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="74" cy="92" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="112" cy="92" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="150" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="188" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="226" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="264" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="302" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="340" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M79,118 Q112.0,95 146,117" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="74" cy="126" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="112" cy="126" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="150" cy="126" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="188" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="226" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="264" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="302" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="340" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M79,152 Q131.0,129 184,151" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="74" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="112" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="150" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="188" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="226" cy="160" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="264" cy="160" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="302" cy="160" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="340" cy="160" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M79,186 Q150.0,163 222,185" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="74" cy="194" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="112" cy="194" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="150" cy="194" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="188" cy="194" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="226" cy="194" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="264" cy="194" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="302" cy="194" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="340" cy="194" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M79,220 Q169.0,197 260,219" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="74" cy="228" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="112" cy="228" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="150" cy="228" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="188" cy="228" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="226" cy="228" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="264" cy="228" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="302" cy="228" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="340" cy="228" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M79,254 Q188.0,231 298,253" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="74" cy="262" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="112" cy="262" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="150" cy="262" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="188" cy="262" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="226" cy="262" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="264" cy="262" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="302" cy="262" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="340" cy="262" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M79,288 Q207.0,265 336,287" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="74" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="112" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="150" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="188" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="226" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="264" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="302" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="340" cy="296" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <text x="450" y="30" font-size="13.5" fill="#0b0b0b" text-anchor="start" font-weight="bold">binomial tree: ⌈log₂ p⌉ = 3 steps</text>
+  <text x="464" y="64" font-size="12" fill="#52514e" text-anchor="middle">0</text>
+  <text x="502" y="64" font-size="12" fill="#52514e" text-anchor="middle">1</text>
+  <text x="540" y="64" font-size="12" fill="#52514e" text-anchor="middle">2</text>
+  <text x="578" y="64" font-size="12" fill="#52514e" text-anchor="middle">3</text>
+  <text x="616" y="64" font-size="12" fill="#52514e" text-anchor="middle">4</text>
+  <text x="654" y="64" font-size="12" fill="#52514e" text-anchor="middle">5</text>
+  <text x="692" y="64" font-size="12" fill="#52514e" text-anchor="middle">6</text>
+  <text x="730" y="64" font-size="12" fill="#52514e" text-anchor="middle">7</text>
+  <path d="M469,84 Q540.0,61 612,83" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="464" cy="92" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="502" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="540" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="578" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="616" cy="92" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="654" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="692" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="730" cy="92" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M469,118 Q502.0,95 536,117" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <path d="M621,118 Q654.0,95 688,117" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="464" cy="126" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="502" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="540" cy="126" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="578" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="616" cy="126" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="654" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <circle cx="692" cy="126" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="730" cy="126" r="8" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5"/>
+  <path d="M469,152 Q483.0,129 498,151" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <path d="M545,152 Q559.0,129 574,151" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <path d="M621,152 Q635.0,129 650,151" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <path d="M697,152 Q711.0,129 726,151" fill="none" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <circle cx="464" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="502" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="540" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="578" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="616" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="654" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="692" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="730" cy="160" r="9" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <text x="597" y="232" font-size="12.5" fill="#52514e" text-anchor="middle">all ranks have the data —</text>
+  <text x="597" y="250" font-size="12.5" fill="#52514e" text-anchor="middle">the remaining 4 steps are saved</text>
+  <text x="74" y="336" font-size="12.5" fill="#0b0b0b" text-anchor="start">root busy in every step:  (p − 1)(α + nβ)</text>
+  <text x="464" y="336" font-size="12.5" fill="#0b0b0b" text-anchor="start">all ranks with data send:  ⌈log₂ p⌉ (α + nβ)</text>
+  <text x="390" y="373" font-size="12.5" fill="#52514e" text-anchor="middle">Broadcast to p = 8 ranks; a row is one step of duration α + nβ, a filled circle a rank that has the data</text>
+</svg>

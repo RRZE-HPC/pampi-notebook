@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 215" width="780" height="215" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/>
+    </marker>
+    <marker id="arrm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a3a29c"/>
+    </marker>
+  </defs>
+  <rect width="780" height="215" rx="12" fill="#fcfcfb"/>
+  <g font-size="14" text-anchor="middle" fill="#0b0b0b">
+    <text x="112" y="31" font-weight="bold">rank 0</text>
+    <text x="297" y="31" font-weight="bold">rank 1</text>
+    <text x="482" y="31" font-weight="bold">rank 2</text>
+    <text x="667" y="31" font-weight="bold">rank 3</text>
+  </g>
+  <g fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5">
+    <rect x="30" y="40" width="165" height="100" rx="8"/>
+    <rect x="215" y="40" width="165" height="100" rx="8"/>
+    <rect x="400" y="40" width="165" height="100" rx="8"/>
+    <rect x="585" y="40" width="165" height="100" rx="8"/>
+  </g>
+  <g font-size="14" text-anchor="middle" fill="#0b0b0b">
+    <rect x="42" y="55" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="112" y="75">send buffer</text>
+    <rect x="42" y="97" width="141" height="30" rx="5" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5" stroke-dasharray="5 3"/><text x="112" y="117" fill="#52514e">unchanged</text>
+    <rect x="227" y="55" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="297" y="75">send buffer</text>
+    <rect x="227" y="97" width="141" height="30" rx="5" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/><text x="297" y="117">receive buffer</text>
+    <rect x="412" y="55" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="482" y="75">send buffer</text>
+    <rect x="412" y="97" width="141" height="30" rx="5" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/><text x="482" y="117">receive buffer</text>
+    <rect x="597" y="55" width="141" height="30" rx="5" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/><text x="667" y="75">send buffer</text>
+    <rect x="597" y="97" width="141" height="30" rx="5" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/><text x="667" y="117">receive buffer</text>
+  </g>
+  <g fill="none" stroke="#2a78d6" stroke-width="2" marker-end="url(#arr)">
+    <path d="M183,70 H205 V112 H224"/>
+    <path d="M368,70 H390 V112 H409"/>
+    <path d="M553,70 H575 V112 H594"/>
+  </g>
+  <g font-size="13" text-anchor="middle" font-family="Menlo, Consolas, monospace" fill="#52514e">
+    <rect x="42" y="165" width="141" height="28" rx="14" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5" stroke-dasharray="5 3"/><text x="112" y="184">MPI_PROC_NULL</text>
+    <rect x="597" y="165" width="141" height="28" rx="14" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.5" stroke-dasharray="5 3"/><text x="667" y="184">MPI_PROC_NULL</text>
+  </g>
+  <g fill="none" stroke="#a3a29c" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrm)">
+    <path d="M112,163 V130"/>
+    <path d="M738,70 H762 V179 H741"/>
+  </g>
+  <g font-size="12" fill="#52514e">
+    <text x="195" y="184">← receive from it: nothing happens</text>
+    <text x="585" y="184" text-anchor="end">send to it: nothing happens →</text>
+  </g>
+</svg>

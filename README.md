@@ -30,6 +30,7 @@ To get the original version of a notebook back, delete it and run `make update` 
 * an MPI implementation that provides `mpicc` and `mpirun` (Open MPI, MPICH, Intel MPI, …)
 * a C compiler (used by `mpicc`)
 * Python 3.9 or newer
+* optional, for the CUDA notebook: an NVIDIA GPU and the CUDA toolkit (`nvcc`, CUDA 11.6 or newer) — without them, the CUDA cells are skipped
 
 Check that MPI works before setting up Jupyter:
 
@@ -59,6 +60,7 @@ make update  # fetch new notebooks from the course repository, keep your changes
 
 `make test` writes the executed notebooks to `.test/`, the originals stay unchanged; `make test NOTEBOOKS=material/mpi-io.ipynb` runs a single notebook.
 Since the `%%mpi` magic reports errors as `[ICE] …` messages instead of exceptions, the test looks for these messages.
+On machines without `nvcc`, the `%%cuda` cells are skipped and counted in the report, but don't fail the test.
 Cells that fail on purpose (deadlock and error demos, exercise templates) carry the cell tag `expect-ice-error` and fail the test if they *succeed*.
 
 `make VENV=~/.venvs/pampi` uses a different location for the environment.
@@ -167,6 +169,7 @@ A `%%mpi` cell is treated as the body of `main()`, wrapped with `MPI_Init()`, `M
 The most important options are `-n N` (number of processes, default 4), `-d` (show generated code), `-v` (show commands), and `-T S` (timeout, default 60 s).
 `-m` enables OpenMP for hybrid MPI+OpenMP code (and for serial `%%c` cells); set the number of threads per process with `-e OMP_NUM_THREADS=N`.
 Run `%mpi -h` in a notebook for the full list.
+`%%cuda` compiles CUDA C++ cells with `nvcc -O3 -arch=native -std=c++17`; it takes the same options as `%%c`.
 
 The OpenMP compiler flags are detected automatically: `-fopenmp` works with GCC, LLVM clang and the Intel compilers.
 Apple's clang, which `mpicc` uses on macOS by default, needs the OpenMP runtime from Homebrew (`brew install libomp`), which the extension finds by itself.

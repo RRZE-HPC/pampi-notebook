@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 855 298" width="855" height="298" font-family="Helvetica, Arial, sans-serif">
+  <title>Thread placement with OMP_PLACES=cores: close, spread, and spread within the cores of each process</title>
+  <rect width="855" height="298" rx="12" fill="#fcfcfb"/>
+  <text x="20" y="53.0" font-size="13" fill="#0b0b0b" font-family="Menlo, Consolas, monospace" font-weight="bold">OMP_PROC_BIND=close</text>
+  <text x="20" y="71.0" font-size="12" fill="#52514e">4 threads on consecutive cores</text>
+  <rect x="275" y="20" width="560" height="74" rx="10" fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5"/>
+  <rect x="285" y="28" width="264" height="58" rx="6" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="417.0" y="41" font-size="10.5" fill="#52514e" text-anchor="middle">socket 0</text>
+  <rect x="561" y="28" width="264" height="58" rx="6" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="693.0" y="41" font-size="10.5" fill="#52514e" text-anchor="middle">socket 1</text>
+  <rect x="293" y="47" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="321.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 0</text>
+  <text x="321.0" y="78" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T0</text>
+  <rect x="357" y="47" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="385.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 1</text>
+  <text x="385.0" y="78" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T1</text>
+  <rect x="421" y="47" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="449.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 2</text>
+  <text x="449.0" y="78" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T2</text>
+  <rect x="485" y="47" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="513.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 3</text>
+  <text x="513.0" y="78" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T3</text>
+  <rect x="569" y="47" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="597.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 4</text>
+  <rect x="633" y="47" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="661.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 5</text>
+  <rect x="697" y="47" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="725.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 6</text>
+  <rect x="761" y="47" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="789.0" y="60" font-size="10" fill="#52514e" text-anchor="middle">core 7</text>
+  <text x="20" y="145.0" font-size="13" fill="#0b0b0b" font-family="Menlo, Consolas, monospace" font-weight="bold">OMP_PROC_BIND=spread</text>
+  <text x="20" y="163.0" font-size="12" fill="#52514e">4 threads spread over the node</text>
+  <rect x="275" y="112" width="560" height="74" rx="10" fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5"/>
+  <rect x="285" y="120" width="264" height="58" rx="6" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="417.0" y="133" font-size="10.5" fill="#52514e" text-anchor="middle">socket 0</text>
+  <rect x="561" y="120" width="264" height="58" rx="6" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="693.0" y="133" font-size="10.5" fill="#52514e" text-anchor="middle">socket 1</text>
+  <rect x="293" y="139" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="321.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 0</text>
+  <text x="321.0" y="170" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T0</text>
+  <rect x="357" y="139" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="385.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 1</text>
+  <rect x="421" y="139" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="449.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 2</text>
+  <text x="449.0" y="170" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T1</text>
+  <rect x="485" y="139" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="513.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 3</text>
+  <rect x="569" y="139" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="597.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 4</text>
+  <text x="597.0" y="170" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T2</text>
+  <rect x="633" y="139" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="661.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 5</text>
+  <rect x="697" y="139" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="725.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 6</text>
+  <text x="725.0" y="170" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T3</text>
+  <rect x="761" y="139" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="789.0" y="152" font-size="10" fill="#52514e" text-anchor="middle">core 7</text>
+  <text x="20" y="237.0" font-size="13" fill="#0b0b0b" font-family="Menlo, Consolas, monospace" font-weight="bold">OMP_PROC_BIND=spread</text>
+  <text x="20" y="255.0" font-size="12" fill="#52514e">2 processes × 2 threads,</text>
+  <text x="20" y="273.0" font-size="12" fill="#52514e">each process pinned to a socket</text>
+  <rect x="275" y="204" width="560" height="74" rx="10" fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5"/>
+  <rect x="285" y="212" width="264" height="58" rx="6" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="417.0" y="225" font-size="10.5" fill="#2a78d6" text-anchor="middle">socket 0: process 0</text>
+  <rect x="561" y="212" width="264" height="58" rx="6" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="693.0" y="225" font-size="10.5" fill="#d97a1e" text-anchor="middle">socket 1: process 1</text>
+  <rect x="293" y="231" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="321.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 0</text>
+  <text x="321.0" y="262" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T0</text>
+  <rect x="357" y="231" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="385.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 1</text>
+  <rect x="421" y="231" width="56" height="38" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="449.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 2</text>
+  <text x="449.0" y="262" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T1</text>
+  <rect x="485" y="231" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="513.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 3</text>
+  <rect x="569" y="231" width="56" height="38" rx="4" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="597.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 4</text>
+  <text x="597.0" y="262" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T0</text>
+  <rect x="633" y="231" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="661.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 5</text>
+  <rect x="697" y="231" width="56" height="38" rx="4" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="725.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 6</text>
+  <text x="725.0" y="262" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">T1</text>
+  <rect x="761" y="231" width="56" height="38" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+  <text x="789.0" y="244" font-size="10" fill="#52514e" text-anchor="middle">core 7</text>
+  <rect x="282" y="209" width="270" height="64" rx="8" fill="none" stroke="#2a78d6" stroke-width="2" stroke-dasharray="4 2.5"/>
+  <rect x="558" y="209" width="270" height="64" rx="8" fill="none" stroke="#d97a1e" stroke-width="2" stroke-dasharray="4 2.5"/>
+</svg>

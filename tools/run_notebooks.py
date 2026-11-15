@@ -3,6 +3,7 @@
 The ICE magic does not raise exceptions, it prints messages starting with [ICE] instead;
 these are reported as failures, as are Python exceptions. Cells tagged `expect-ice-error`
 are expected to produce such a message (e.g. a deliberate deadlock) and fail if they do not.
+CUDA cells are skipped without failure on machines without nvcc; the report counts them.
 
 The executed notebooks are written to OUTDIR, the originals stay unchanged.
 
@@ -26,6 +27,8 @@ ICE_ERRORS = (
     '[ICE] Execution killed',
     '[ICE] Execution finished with exit code',
 )
+# message of the ICE magic for CUDA cells on machines without nvcc: no failure
+ICE_SKIPPED = '[ICE] CUDA cell skipped'
 EXPECT_TAG = 'expect-ice-error'
 CELL_TIMEOUT = 900
 
@@ -59,6 +62,11 @@ def check(nb):
     return failures
 
 
+def skipped(nb):
+    """returns the number of CUDA cells skipped for lack of nvcc"""
+    return sum(1 for cell in nb.cells if cell.cell_type == 'code' and ICE_SKIPPED in output_text(cell))
+
+
 def run(path, outdir):
     nb = nbformat.read(path, as_version=4)
     client = NotebookClient(nb, timeout=CELL_TIMEOUT, allow_errors=True,
@@ -73,13 +81,13 @@ def run(path, outdir):
         with open(outdir / 'kernel.log', 'a') as log:
             client.execute(env=env, stderr=log)
     except Exception as e:  # with allow_errors only raised for cell timeouts and dead kernels
-        return [(-1, f'{type(e).__name__}: {str(e).strip().splitlines()[0] if str(e).strip() else ""}')], time.monotonic() - start
+        return [(-1, f'{type(e).__name__}: {str(e).strip().splitlines()[0] if str(e).strip() else ""}')], 0, time.monotonic() - start
     finally:
         tmpdir.cleanup()
         out = outdir / path
         out.parent.mkdir(parents=True, exist_ok=True)
         nbformat.write(nb, out)
-    return check(nb), time.monotonic() - start
+    return check(nb), skipped(nb), time.monotonic() - start
 
 
 def main():
@@ -92,8 +100,9 @@ def main():
     for name in sys.argv[2:]:
         path = pathlib.Path(name)
         print(f'{name} ...', end=' ', flush=True)
-        failures, seconds = run(path, outdir)
-        print(f'{"FAILED" if failures else "ok"} ({seconds:.0f} s)')
+        failures, nskipped, seconds = run(path, outdir)
+        note = f', {nskipped} CUDA cells skipped: no nvcc' if nskipped else ''
+        print(f'{"FAILED" if failures else "ok"} ({seconds:.0f} s{note})')
         for cell, message in failures:
             print(f'    cell {cell}: {message}')
         if failures:

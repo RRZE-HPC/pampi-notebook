@@ -90,6 +90,7 @@ class ICEMagic(magic.Magics):
         self.argparsers = {
             'base' : argparse.ArgumentParser(prog='%%c',   description='ICE magic for serial C code'),
             'mpi'  : argparse.ArgumentParser(prog='%%mpi', description='ICE magic for MPI parallel C code'),
+            'cuda' : argparse.ArgumentParser(prog='%%cuda', description='ICE magic for CUDA C++ code (needs nvcc and an NVIDIA GPU)'),
         }
 
         # query TMPDIR
@@ -103,11 +104,12 @@ class ICEMagic(magic.Magics):
         self.openmp_cache = {}
 
         # set magic arguments with common default values
-        for p in self.argparsers.values():
+        for case, p in self.argparsers.items():
             p.add_argument('-v', '--verbose', help='prints each command executed', action='store_true', default=False)
             p.add_argument('-d', '--display', help='displays the generated application code', action='store_true', default=False)
             p.add_argument('-r', '--raw', help='treats the cell as a complete program instead of the body of main', action='store_true', default=False)
-            p.add_argument('-o', '--output-file', help='specifies the output source code file', default=tmpdir+'/code.c')
+            # nvcc picks the language from the file extension
+            p.add_argument('-o', '--output-file', help='specifies the output source code file', default=tmpdir+('/code.cu' if case == 'cuda' else '/code.c'))
             p.add_argument('-b', '--binary', help='specifies the compiled binary file', default=tmpdir+'/app')
             p.add_argument('-e', '--env', help='sets environment variables for execution', nargs='+', default=[])
             p.add_argument('-t', '--time', help='generates additional timing code', action='store_true', default=False)
@@ -119,11 +121,13 @@ class ICEMagic(magic.Magics):
             p.add_argument('-m', '--openmp', help='enables OpenMP (flags detected automatically, or taken from ICE_OPENMP_FLAGS) and includes omp.h; %%%%mpi then initializes MPI with MPI_Init_thread(MPI_THREAD_FUNNELED)', action='store_true', default=False)
 
         # set magic arguments with specialized default values
-        for case, compiler in { 'base' : 'cc', 'mpi' : 'mpicc' }.items():
+        for case, compiler in { 'base' : 'cc', 'mpi' : 'mpicc', 'cuda' : 'nvcc' }.items():
             self.argparsers[case].add_argument('-c',  '--compiler', help='specifies the compiler to be used', default=compiler)
 
+        # nvcc: -arch=native compiles for the GPU(s) of this machine (CUDA 11.6 or newer)
         for case, flags in { 'base' : ['O3', 'march=native', 'std=c17', 'Wall'],
-                             'mpi'  : ['O3', 'march=native', 'std=c17', 'Wall'] }.items():
+                             'mpi'  : ['O3', 'march=native', 'std=c17', 'Wall'],
+                             'cuda' : ['O3', 'arch=native', 'std=c++17'] }.items():
             self.argparsers[case].add_argument('-F', '--def-flags', help='overwrites default compiler flags to be used', nargs='+', default=flags)
 
         # stdio.h and stdlib.h are required for printing and general utilities
@@ -131,7 +135,8 @@ class ICEMagic(magic.Magics):
         # time.h is required for timing serial code
         # mpi.h is required for MPI API functions
         for case, includes in { 'base' : ['stdio.h', 'stdlib.h', 'stdint.h', 'time.h'],
-                                'mpi'  : ['stdio.h', 'stdlib.h', 'stdint.h', 'mpi.h'] }.items():
+                                'mpi'  : ['stdio.h', 'stdlib.h', 'stdint.h', 'mpi.h'],
+                                'cuda' : ['stdio.h', 'stdlib.h', 'stdint.h', 'time.h'] }.items():
             self.argparsers[case].add_argument('-I', '--def-include', help='overwrites default includes to be added', nargs='+', default=includes)
 
         # MPI specific arguments: number of processes and how to launch them
@@ -214,7 +219,7 @@ int main(int argc, char *argv[]) {
 
 
     def generate_markdown(self):
-        return f'''```c
+        return f'''```{'cpp' if self.case == 'cuda' else 'c'}
 {self.generate_application()}
 ```'''
 
@@ -278,7 +283,12 @@ int main(int argc, char *argv[]) {
         # libraries (-lNAME) must follow the source file, otherwise linkers that resolve symbols
         # in command line order (GNU ld, especially with --as-needed) drop them
         if shutil.which(self.args.compiler) is None:
-            print(f'[ICE] Compiler {self.args.compiler} not found - is the MPI module loaded?')
+            if self.case == 'cuda':
+                # most laptops have no NVIDIA GPU: not an error, the cell is just skipped
+                print(f'[ICE] CUDA cell skipped: {self.args.compiler} not found - CUDA cells need an NVIDIA GPU and the '
+                      'CUDA toolkit (on a cluster: load the CUDA module on a GPU node)')
+            else:
+                print(f'[ICE] Compiler {self.args.compiler} not found - is the MPI module loaded?')
             return
 
         flags = [f'-{f}' for f in self.args.def_flags + self.args.flags]
@@ -358,6 +368,11 @@ int main(int argc, char *argv[]) {
     @magic.line_cell_magic
     def mpi(self, line, cell=None):
         self.ice(line, cell, 'mpi')
+
+
+    @magic.line_cell_magic
+    def cuda(self, line, cell=None):
+        self.ice(line, cell, 'cuda')
 
 
     @magic.line_magic

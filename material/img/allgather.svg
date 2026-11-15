@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 248" width="780" height="248" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <rect width="780" height="248" rx="12" fill="#fcfcfb"/>
+  <text x="30" y="30" font-size="15" fill="#0b0b0b" font-weight="bold">before</text>
+  <text x="450" y="30" font-size="15" fill="#0b0b0b" font-weight="bold">after</text>
+  <text x="30" y="70.0" font-size="13" fill="#52514e">rank 0</text>
+  <text x="30" y="112.0" font-size="13" fill="#52514e">rank 1</text>
+  <text x="30" y="154.0" font-size="13" fill="#52514e">rank 2</text>
+  <text x="30" y="196.0" font-size="13" fill="#52514e">rank 3</text>
+  <text x="450" y="70.0" font-size="13" fill="#52514e">rank 0</text>
+  <text x="450" y="112.0" font-size="13" fill="#52514e">rank 1</text>
+  <text x="450" y="154.0" font-size="13" fill="#52514e">rank 2</text>
+  <text x="450" y="196.0" font-size="13" fill="#52514e">rank 3</text>
+  <rect x="100" y="50" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="117.0" y="70.0" font-size="14" fill="#0b0b0b" text-anchor="middle">0</text>
+  <rect x="520" y="50" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="537.0" y="70.0" font-size="14" fill="#0b0b0b" text-anchor="middle">0</text>
+  <rect x="556" y="50" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="573.0" y="70.0" font-size="14" fill="#0b0b0b" text-anchor="middle">1</text>
+  <rect x="592" y="50" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="609.0" y="70.0" font-size="14" fill="#0b0b0b" text-anchor="middle">2</text>
+  <rect x="628" y="50" width="34" height="30" rx="3" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="645.0" y="70.0" font-size="14" fill="#0b0b0b" text-anchor="middle">3</text>
+  <rect x="100" y="92" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="117.0" y="112.0" font-size="14" fill="#0b0b0b" text-anchor="middle">1</text>
+  <rect x="520" y="92" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="537.0" y="112.0" font-size="14" fill="#0b0b0b" text-anchor="middle">0</text>
+  <rect x="556" y="92" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="573.0" y="112.0" font-size="14" fill="#0b0b0b" text-anchor="middle">1</text>
+  <rect x="592" y="92" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="609.0" y="112.0" font-size="14" fill="#0b0b0b" text-anchor="middle">2</text>
+  <rect x="628" y="92" width="34" height="30" rx="3" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="645.0" y="112.0" font-size="14" fill="#0b0b0b" text-anchor="middle">3</text>
+  <rect x="100" y="134" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="117.0" y="154.0" font-size="14" fill="#0b0b0b" text-anchor="middle">2</text>
+  <rect x="520" y="134" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="537.0" y="154.0" font-size="14" fill="#0b0b0b" text-anchor="middle">0</text>
+  <rect x="556" y="134" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="573.0" y="154.0" font-size="14" fill="#0b0b0b" text-anchor="middle">1</text>
+  <rect x="592" y="134" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="609.0" y="154.0" font-size="14" fill="#0b0b0b" text-anchor="middle">2</text>
+  <rect x="628" y="134" width="34" height="30" rx="3" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="645.0" y="154.0" font-size="14" fill="#0b0b0b" text-anchor="middle">3</text>
+  <rect x="100" y="176" width="34" height="30" rx="3" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="117.0" y="196.0" font-size="14" fill="#0b0b0b" text-anchor="middle">3</text>
+  <rect x="520" y="176" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="537.0" y="196.0" font-size="14" fill="#0b0b0b" text-anchor="middle">0</text>
+  <rect x="556" y="176" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="573.0" y="196.0" font-size="14" fill="#0b0b0b" text-anchor="middle">1</text>
+  <rect x="592" y="176" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="609.0" y="196.0" font-size="14" fill="#0b0b0b" text-anchor="middle">2</text>
+  <rect x="628" y="176" width="34" height="30" rx="3" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1.5"/>
+  <text x="645.0" y="196.0" font-size="14" fill="#0b0b0b" text-anchor="middle">3</text>
+  <line x1="240" y1="128.0" x2="420" y2="128.0" stroke="#52514e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="330.0" y="119.0" font-size="12.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">MPI_Allgather</text>
+  <text x="390" y="236" font-size="12.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">MPI_Allgather(sendbuf, 1, MPI_INT, recvbuf, 1, MPI_INT, MPI_COMM_WORLD)</text>
+</svg>
