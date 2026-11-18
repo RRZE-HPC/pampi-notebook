@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" width="760" height="310" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="msg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9822b"/>
+    </marker>
+    <g id="node">
+      <rect x="0" y="0" width="110" height="200" rx="10" fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5"/>
+      <rect x="15" y="12" width="80" height="44" rx="6" fill="#e3edfa" stroke="#2a78d6" stroke-width="2"/>
+      <text x="55" y="41" text-anchor="middle" font-size="18" font-weight="bold" fill="#0b0b0b">CPU</text>
+      <rect x="25" y="62" width="60" height="20" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+      <text x="55" y="76" text-anchor="middle" font-size="12" fill="#52514e">cache</text>
+      <line x1="55" y1="82" x2="55" y2="92" stroke="#52514e" stroke-width="1.5"/>
+      <rect x="15" y="92" width="80" height="44" rx="6" fill="#fcfcfb" stroke="#52514e" stroke-width="1.5"/>
+      <text x="55" y="119" text-anchor="middle" font-size="14" fill="#0b0b0b">memory</text>
+      <line x1="55" y1="136" x2="55" y2="146" stroke="#52514e" stroke-width="1.5"/>
+      <rect x="25" y="146" width="60" height="24" rx="4" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2"/>
+      <text x="55" y="163" text-anchor="middle" font-size="12" fill="#52514e">NIC</text>
+      <line x1="55" y1="170" x2="55" y2="245" stroke="#52514e" stroke-width="1.5"/>
+    </g>
+  </defs>
+  <rect width="760" height="310" rx="12" fill="#fcfcfb"/>
+
+  <use href="#node" x="45" y="20"/>
+  <use href="#node" x="185" y="20"/>
+  <use href="#node" x="325" y="20"/>
+  <use href="#node" x="465" y="20"/>
+  <use href="#node" x="605" y="20"/>
+
+  <rect x="30" y="245" width="700" height="44" rx="8" fill="#52514e"/>
+  <text x="380" y="273" text-anchor="middle" font-size="16" font-weight="bold" fill="#fcfcfb">communication network</text>
+
+  <path d="M120,156 V281 H540 V158" fill="none" stroke="#d9822b" stroke-width="3" stroke-linejoin="round" marker-end="url(#msg)"/>
+  <circle cx="120" cy="156" r="4" fill="#d9822b"/>
+  <rect x="290" y="222" width="80" height="20" rx="4" fill="#fdf0dc" stroke="#d9822b" stroke-width="1.5"/>
+  <text x="330" y="236" text-anchor="middle" font-size="12" fill="#0b0b0b">message</text>
+</svg>

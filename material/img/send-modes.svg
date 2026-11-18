@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 460" width="780" height="460" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+    <pattern id="wait" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#e3edfa"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#a9c7ee" stroke-width="3"/>
+    </pattern>
+    <pattern id="waitr" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#fbe9d6"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#f0c69c" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <rect width="780" height="460" rx="12" fill="#fcfcfb"/>
+
+  <!-- ===== buffered ===== -->
+  <rect x="15" y="15" width="750" height="130" rx="10" fill="#f1f0ee"/>
+  <text x="30" y="37" font-size="15" fill="#0b0b0b"><tspan font-weight="bold">Buffered mode</tspan><tspan dx="10" font-size="14" fill="#52514e" font-family="Menlo, Consolas, monospace">MPI_Bsend()</tspan></text>
+  <g font-size="13" fill="#52514e" text-anchor="end"><text x="110" y="75">sender</text><text x="110" y="117">receiver</text></g>
+  <g stroke="#a3a29c" stroke-width="2"><line x1="120" y1="71" x2="560" y2="71"/><line x1="120" y1="113" x2="560" y2="113"/></g>
+  <rect x="150" y="63" width="60" height="16" rx="3" fill="#2a78d6"/>
+  <text x="180" y="57" text-anchor="middle" font-size="11" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">MPI_Bsend</text>
+  <rect x="380" y="105" width="70" height="16" rx="3" fill="#d97a1e"/>
+  <text x="415" y="136" text-anchor="middle" font-size="11" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">MPI_Recv</text>
+  <line x1="212" y1="73" x2="378" y2="111" stroke="#52514e" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arr)"/>
+  <text x="305" y="82" font-size="11" fill="#52514e">data, sent from the buffer</text>
+  <g font-size="12.5" fill="#0b0b0b">
+    <text x="580" y="60">returns as soon as the data</text>
+    <text x="580" y="76">is copied to the attached buffer</text>
+    <text x="580" y="98" fill="#2f9a5b" font-weight="bold">local operation</text>
+    <text x="580" y="114" fill="#52514e">needs only the sender</text>
+  </g>
+
+  <!-- ===== synchronous ===== -->
+  <rect x="15" y="155" width="750" height="130" rx="10" fill="#f1f0ee"/>
+  <text x="30" y="177" font-size="15" fill="#0b0b0b"><tspan font-weight="bold">Synchronous mode</tspan><tspan dx="10" font-size="14" fill="#52514e" font-family="Menlo, Consolas, monospace">MPI_Ssend()</tspan></text>
+  <g font-size="13" fill="#52514e" text-anchor="end"><text x="110" y="215">sender</text><text x="110" y="257">receiver</text></g>
+  <g stroke="#a3a29c" stroke-width="2"><line x1="120" y1="211" x2="560" y2="211"/><line x1="120" y1="253" x2="560" y2="253"/></g>
+  <rect x="150" y="203" width="250" height="16" rx="3" fill="url(#wait)" stroke="#2a78d6" stroke-width="1.5"/>
+  <rect x="150" y="203" width="18" height="16" rx="3" fill="#2a78d6"/>
+  <text x="180" y="197" font-size="11" fill="#0b0b0b" font-family="Menlo, Consolas, monospace" text-anchor="middle">MPI_Ssend</text>
+  <text x="285" y="197" font-size="11" fill="#52514e" text-anchor="middle">waiting for the receiver</text>
+  <rect x="372" y="245" width="80" height="16" rx="3" fill="#d97a1e"/>
+  <text x="412" y="276" text-anchor="middle" font-size="11" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">MPI_Recv</text>
+  <line x1="162" y1="220" x2="190" y2="250" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="198" y="246" font-size="11" fill="#52514e">envelope</text>
+  <line x1="374" y1="244" x2="396" y2="222" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="332" y="240" font-size="11" fill="#52514e">ready</text>
+  <line x1="402" y1="220" x2="430" y2="250" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="436" y="234" font-size="11" fill="#52514e">data</text>
+  <g font-size="12.5" fill="#0b0b0b">
+    <text x="580" y="200">returns only once the matching</text>
+    <text x="580" y="216">receive has started (handshake)</text>
+    <text x="580" y="238" fill="#c8373a" font-weight="bold">non-local operation</text>
+    <text x="580" y="254" fill="#52514e">depends on the receiver</text>
+  </g>
+
+  <!-- ===== ready ===== -->
+  <rect x="15" y="295" width="750" height="130" rx="10" fill="#f1f0ee"/>
+  <text x="30" y="317" font-size="15" fill="#0b0b0b"><tspan font-weight="bold">Ready mode</tspan><tspan dx="10" font-size="14" fill="#52514e" font-family="Menlo, Consolas, monospace">MPI_Rsend()</tspan></text>
+  <g font-size="13" fill="#52514e" text-anchor="end"><text x="110" y="355">sender</text><text x="110" y="397">receiver</text></g>
+  <g stroke="#a3a29c" stroke-width="2"><line x1="120" y1="351" x2="560" y2="351"/><line x1="120" y1="393" x2="560" y2="393"/></g>
+  <rect x="150" y="385" width="280" height="16" rx="3" fill="url(#waitr)" stroke="#d97a1e" stroke-width="1.5"/>
+  <rect x="150" y="385" width="18" height="16" rx="3" fill="#d97a1e"/>
+  <rect x="408" y="385" width="22" height="16" rx="3" fill="#d97a1e"/>
+  <text x="190" y="416" font-size="11" fill="#0b0b0b" font-family="Menlo, Consolas, monospace" text-anchor="middle">MPI_Recv</text>
+  <text x="318" y="416" font-size="11" fill="#52514e" text-anchor="middle">posted, waiting for the message</text>
+  <rect x="340" y="343" width="44" height="16" rx="3" fill="#2a78d6"/>
+  <text x="362" y="337" font-size="11" fill="#0b0b0b" font-family="Menlo, Consolas, monospace" text-anchor="middle">MPI_Rsend</text>
+  <line x1="384" y1="360" x2="406" y2="384" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <g font-size="12.5" fill="#0b0b0b">
+    <text x="580" y="340">only correct if the matching</text>
+    <text x="580" y="356">receive is <tspan font-weight="bold">already posted</tspan></text>
+    <text x="580" y="378" fill="#c8373a" font-weight="bold">non-local operation</text>
+    <text x="580" y="394" fill="#52514e">rarely used in practice</text>
+  </g>
+
+  <line x1="120" y1="442" x2="560" y2="442" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="566" y="446" font-size="13" fill="#52514e">time</text>
+</svg>

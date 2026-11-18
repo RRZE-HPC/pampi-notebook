@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 404" width="780" height="404" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <rect width="780" height="404" rx="12" fill="#fcfcfb"/>
+  <text x="20" y="30" font-size="15" fill="#0b0b0b" font-weight="bold">before</text>
+  <text x="440" y="30" font-size="15" fill="#0b0b0b" font-weight="bold">after</text>
+  <text x="90" y="52" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">sendbuf</text>
+  <text x="510" y="52" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">recvbuf</text>
+  <text x="20" y="82" font-size="13" fill="#52514e">rank 0</text>
+  <text x="460" y="82" font-size="13" fill="#52514e">rank 0</text>
+  <rect x="90" y="62" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="107.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">0</text>
+  <path d="M92,95 v4 H122 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="107.0" y="112" font-size="11.5" fill="#52514e" text-anchor="middle">→ 0</text>
+  <rect x="126" y="62" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="143.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">1</text>
+  <rect x="162" y="62" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="179.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">2</text>
+  <path d="M128,95 v4 H194 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="161.0" y="112" font-size="11.5" fill="#52514e" text-anchor="middle">→ 1</text>
+  <rect x="198" y="62" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="215.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">3</text>
+  <path d="M200,95 v4 H230 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="215.0" y="112" font-size="11.5" fill="#52514e" text-anchor="middle">→ 2</text>
+  <text x="90" y="132" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">sendcounts = {1, 2, 1}</text>
+  <text x="90" y="148" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">sdispls = {0, 1, 3}</text>
+  <rect x="510" y="62" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="527.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">0</text>
+  <path d="M512,95 v4 H542 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="527.0" y="112" font-size="11.5" fill="#52514e" text-anchor="middle">← 0</text>
+  <path d="M559,59 v36" stroke="#52514e" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <text x="559" y="112" font-size="11.5" fill="#52514e" text-anchor="middle">← 1</text>
+  <rect x="576" y="62" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="593.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">20</text>
+  <rect x="612" y="62" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="629.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">21</text>
+  <rect x="648" y="62" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="665.0" y="82" font-size="14" fill="#0b0b0b" text-anchor="middle">22</text>
+  <path d="M578,95 v4 H680 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="629.0" y="112" font-size="11.5" fill="#52514e" text-anchor="middle">← 2</text>
+  <text x="510" y="132" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">recvcounts = {1, 0, 3}</text>
+  <text x="510" y="148" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">rdispls = {0, 1, 1}</text>
+  <text x="20" y="186" font-size="13" fill="#52514e">rank 1</text>
+  <text x="460" y="186" font-size="13" fill="#52514e">rank 1</text>
+  <path d="M103,163 v36" stroke="#52514e" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <text x="103" y="216" font-size="11.5" fill="#52514e" text-anchor="middle">→ 0</text>
+  <rect x="120" y="166" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="137.0" y="186" font-size="14" fill="#0b0b0b" text-anchor="middle">10</text>
+  <path d="M122,199 v4 H152 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="137.0" y="216" font-size="11.5" fill="#52514e" text-anchor="middle">→ 1</text>
+  <rect x="156" y="166" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="173.0" y="186" font-size="14" fill="#0b0b0b" text-anchor="middle">11</text>
+  <rect x="192" y="166" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="209.0" y="186" font-size="14" fill="#0b0b0b" text-anchor="middle">12</text>
+  <path d="M158,199 v4 H224 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="191.0" y="216" font-size="11.5" fill="#52514e" text-anchor="middle">→ 2</text>
+  <text x="90" y="236" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">sendcounts = {0, 1, 2}</text>
+  <text x="90" y="252" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">sdispls = {0, 0, 1}</text>
+  <rect x="510" y="166" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="527.0" y="186" font-size="14" fill="#0b0b0b" text-anchor="middle">1</text>
+  <rect x="546" y="166" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="563.0" y="186" font-size="14" fill="#0b0b0b" text-anchor="middle">2</text>
+  <path d="M512,199 v4 H578 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="545.0" y="216" font-size="11.5" fill="#52514e" text-anchor="middle">← 0</text>
+  <rect x="582" y="166" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="599.0" y="186" font-size="14" fill="#0b0b0b" text-anchor="middle">10</text>
+  <path d="M584,199 v4 H614 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="599.0" y="216" font-size="11.5" fill="#52514e" text-anchor="middle">← 1</text>
+  <rect x="618" y="166" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="635.0" y="186" font-size="14" fill="#0b0b0b" text-anchor="middle">23</text>
+  <path d="M620,199 v4 H650 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="635.0" y="216" font-size="11.5" fill="#52514e" text-anchor="middle">← 2</text>
+  <text x="510" y="236" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">recvcounts = {2, 1, 1}</text>
+  <text x="510" y="252" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">rdispls = {0, 2, 3}</text>
+  <text x="20" y="290" font-size="13" fill="#52514e">rank 2</text>
+  <text x="460" y="290" font-size="13" fill="#52514e">rank 2</text>
+  <rect x="90" y="270" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="107.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">20</text>
+  <rect x="126" y="270" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="143.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">21</text>
+  <rect x="162" y="270" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="179.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">22</text>
+  <path d="M92,303 v4 H194 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="143.0" y="320" font-size="11.5" fill="#52514e" text-anchor="middle">→ 0</text>
+  <rect x="198" y="270" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="215.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">23</text>
+  <path d="M200,303 v4 H230 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="215.0" y="320" font-size="11.5" fill="#52514e" text-anchor="middle">→ 1</text>
+  <rect x="234" y="270" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="251.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">24</text>
+  <path d="M236,303 v4 H266 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="251.0" y="320" font-size="11.5" fill="#52514e" text-anchor="middle">→ 2</text>
+  <text x="90" y="340" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">sendcounts = {3, 1, 1}</text>
+  <text x="90" y="356" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">sdispls = {0, 3, 4}</text>
+  <rect x="510" y="270" width="34" height="30" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="527.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">3</text>
+  <path d="M512,303 v4 H542 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="527.0" y="320" font-size="11.5" fill="#52514e" text-anchor="middle">← 0</text>
+  <rect x="546" y="270" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="563.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">11</text>
+  <rect x="582" y="270" width="34" height="30" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="599.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">12</text>
+  <path d="M548,303 v4 H614 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="581.0" y="320" font-size="11.5" fill="#52514e" text-anchor="middle">← 1</text>
+  <rect x="618" y="270" width="34" height="30" rx="3" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="635.0" y="290" font-size="14" fill="#0b0b0b" text-anchor="middle">24</text>
+  <path d="M620,303 v4 H650 v-4" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <text x="635.0" y="320" font-size="11.5" fill="#52514e" text-anchor="middle">← 2</text>
+  <text x="510" y="340" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">recvcounts = {1, 2, 1}</text>
+  <text x="510" y="356" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">rdispls = {0, 1, 3}</text>
+  <line x1="320" y1="181" x2="420" y2="181" stroke="#52514e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="370" y="172" font-size="12.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">MPI_Alltoallv</text>
+  <text x="20" y="386" font-size="12.5" fill="#52514e">Rank r sends sendcounts[j] elements to rank j and receives recvcounts[i] elements from rank i; counts may be zero.</text>
+</svg>

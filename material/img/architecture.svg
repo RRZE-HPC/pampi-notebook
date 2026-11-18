@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" width="760" height="290" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <rect width="760" height="290" rx="12" fill="#fcfcfb"/>
+
+  <rect x="30" y="25" width="340" height="56" rx="8" fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5"/>
+  <text x="200" y="59" text-anchor="middle" font-size="18" fill="#0b0b0b">Application</text>
+
+  <line x1="200" y1="83" x2="200" y2="113" stroke="#52514e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="212" y="103" font-size="13" fill="#52514e">library calls (&gt; 500, ~20 essential)</text>
+
+  <rect x="30" y="117" width="340" height="56" rx="8" fill="#e3edfa" stroke="#2a78d6" stroke-width="2"/>
+  <text x="200" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#0b0b0b">MPI Library</text>
+
+  <line x1="200" y1="175" x2="200" y2="205" stroke="#52514e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="30" y="209" width="340" height="56" rx="8" fill="#f1f0ee" stroke="#a3a29c" stroke-width="1.5"/>
+  <text x="200" y="236" text-anchor="middle" font-size="15" fill="#0b0b0b">threads / processes / CPUs /</text>
+  <text x="200" y="255" text-anchor="middle" font-size="15" fill="#0b0b0b">network hardware</text>
+
+  <line x1="410" y1="53" x2="374" y2="53" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="420" y="48" font-size="15" font-weight="bold" fill="#0b0b0b">Operating system view</text>
+  <text x="420" y="67" font-size="13" fill="#52514e">a set of running processes</text>
+
+  <line x1="410" y1="145" x2="374" y2="145" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="420" y="140" font-size="15" font-weight="bold" fill="#0b0b0b">Developer's view</text>
+  <text x="420" y="159" font-size="13" fill="#52514e">coordination · communication · synchronization</text>
+
+  <line x1="410" y1="237" x2="374" y2="237" stroke="#52514e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="420" y="232" font-size="15" font-weight="bold" fill="#0b0b0b">User's view: execution environment</text>
+  <text x="420" y="251" font-size="13" fill="#52514e">resource allocation · program startup</text>
+</svg>
