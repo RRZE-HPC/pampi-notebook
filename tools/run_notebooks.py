@@ -3,7 +3,7 @@
 The ICE magic does not raise exceptions, it prints messages starting with [ICE] instead;
 these are reported as failures, as are Python exceptions. Cells tagged `expect-ice-error`
 are expected to produce such a message (e.g. a deliberate deadlock) and fail if they do not.
-CUDA cells are skipped without failure on machines without nvcc; the report counts them.
+CUDA cells (%%cuda, %%mpicuda) are skipped without failure on machines without nvcc; the report counts them.
 
 The executed notebooks are written to OUTDIR, the originals stay unchanged.
 

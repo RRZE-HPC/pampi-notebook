@@ -30,7 +30,8 @@ To get the original version of a notebook back, delete it and run `make update` 
 * an MPI implementation that provides `mpicc` and `mpirun` (Open MPI, MPICH, Intel MPI, …)
 * a C compiler (used by `mpicc`)
 * Python 3.9 or newer
-* optional, for the CUDA notebook: an NVIDIA GPU and the CUDA toolkit (`nvcc`, CUDA 11.6 or newer) — without them, the CUDA cells are skipped
+* optional, for the CUDA notebooks: an NVIDIA GPU and the CUDA toolkit (`nvcc`, CUDA 11.6 or newer) — without them, the CUDA cells are skipped;
+  the MPI+CUDA notebook also needs the MPI C++ compiler wrapper (`mpicxx`), and some of its cells a CUDA-aware MPI library
 
 Check that MPI works before setting up Jupyter:
 
@@ -157,7 +158,7 @@ Nothing needs to be cleaned up: every run overwrites these files, and `material/
 |---|---|
 | `overview.ipynb` | entry point with links to all notebooks |
 | `material/*.ipynb` | the notebooks |
-| `material/ice/magic.py` | IPython extension providing the `%%mpi` and `%%c` cell magics |
+| `material/ice/magic.py` | IPython extension providing the `%%mpi`, `%%c`, `%%cuda` and `%%mpicuda` cell magics |
 | `material/code/` | C sources of the examples, written when the notebook cells are run |
 | `material/img/` | figures used in the notebooks |
 | `material/data/` | files written by the MPI I/O and CFD notebooks (created when they run) |
@@ -170,6 +171,7 @@ The most important options are `-n N` (number of processes, default 4), `-d` (sh
 `-m` enables OpenMP for hybrid MPI+OpenMP code (and for serial `%%c` cells); set the number of threads per process with `-e OMP_NUM_THREADS=N`.
 Run `%mpi -h` in a notebook for the full list.
 `%%cuda` compiles CUDA C++ cells with `nvcc -O3 -arch=native -std=c++17`; it takes the same options as `%%c`.
+`%%mpicuda` compiles MPI programs with CUDA code with `nvcc -ccbin mpicxx`, i.e. with the MPI C++ compiler wrapper as host compiler, and starts them like `%%mpi`.
 
 The OpenMP compiler flags are detected automatically: `-fopenmp` works with GCC, LLVM clang and the Intel compilers.
 Apple's clang, which `mpicc` uses on macOS by default, needs the OpenMP runtime from Homebrew (`brew install libomp`), which the extension finds by itself.
@@ -182,6 +184,7 @@ The launcher can be configured with environment variables, which must be set **b
 | `ICE_MPI_LAUNCHER` | `mpirun` | program used to start MPI applications, e.g. `srun` |
 | `ICE_MPI_LAUNCHER_FLAGS` | `--oversubscribe` for Open MPI, empty otherwise | default flags passed to the launcher |
 | `ICE_OPENMP_FLAGS` | detected automatically | compiler flags enabling OpenMP for `-m`, e.g. `-qopenmp` |
+| `ICE_MPI_CXX` | `mpicxx` | the MPI C++ compiler wrapper `%%mpicuda` passes to `nvcc` as host compiler, e.g. `mpiicpx` |
 | `TMPDIR` | `$HOME` if unset | where the generated source code and binary are stored |
 
 For example, on a cluster node within a Slurm job:

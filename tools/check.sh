@@ -113,6 +113,49 @@ else
     warn "nvcc not found - the CUDA cells will be skipped (on a cluster: load the CUDA module on a GPU node)"
 fi
 
+echo "MPI+CUDA (only needed for the MPI+CUDA notebook, requires an NVIDIA GPU)"
+cxx=${ICE_MPI_CXX:-mpicxx}
+if ! command -v nvcc >/dev/null 2>&1; then
+    warn "nvcc not found - the MPI+CUDA cells will be skipped"
+elif ! command -v "$cxx" >/dev/null 2>&1; then
+    warn "$cxx not found - set ICE_MPI_CXX to the MPI C++ compiler wrapper, e.g. mpiicpx"
+elif [ $failed -ne 0 ]; then
+    warn "skipped, MPI does not work"
+else
+    cat > "$tmp/mpicuda.cu" <<'EOF'
+#include <stdio.h>
+#include <mpi.h>
+#if defined(OPEN_MPI) && OPEN_MPI
+#include <mpi-ext.h>
+#endif
+int main(int argc, char **argv) {
+    int n = 0;
+    MPI_Init(&argc, &argv);
+    if (cudaGetDeviceCount(&n) != cudaSuccess || n < 1) {
+        MPI_Finalize();
+        return 1;
+    }
+#if defined(MPIX_CUDA_AWARE_SUPPORT)
+    printf("%d GPU(s), MPI library %s\n", n, MPIX_Query_cuda_support() ? "is CUDA-aware" : "is not CUDA-aware");
+#else
+    printf("%d GPU(s), CUDA-awareness of the MPI library unknown\n", n);
+#endif
+    MPI_Finalize();
+    return 0;
+}
+EOF
+    # shellcheck disable=SC2086
+    if ! nvcc -ccbin "$cxx" -arch=native -o "$tmp/mpicuda" "$tmp/mpicuda.cu" > "$tmp/log" 2>&1; then
+        warn "nvcc -ccbin $cxx cannot compile an MPI+CUDA program:"
+        sed 's/^/        /' "$tmp/log"
+    elif ! "$launcher" $flags -n 1 "$tmp/mpicuda" > "$tmp/log" 2>&1; then
+        warn "an MPI+CUDA program compiled, but did not run - is there a GPU on this node?"
+        sed 's/^/        /' "$tmp/log"
+    else
+        ok "compiled and ran an MPI+CUDA program: $(tail -n 1 "$tmp/log")"
+    fi
+fi
+
 echo "Python environment"
 if [ -x "$venv/bin/python" ]; then
     if out=$("$venv/bin/python" -c 'import jupyterlab, matplotlib, numpy, sys; print(sys.version.split()[0])' 2>&1); then
