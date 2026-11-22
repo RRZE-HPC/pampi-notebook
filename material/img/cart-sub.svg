@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 530" width="780" height="530" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/></marker>
+    <marker id="arro" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97a1e"/></marker>
+    <marker id="arrp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a5cc2"/></marker>
+  </defs>
+  <rect width="780" height="530" rx="12" fill="#fcfcfb"/>
+  <text x="60" y="40" font-size="13" fill="#0b0b0b" font-weight="bold" font-family="Menlo, Consolas, monospace">remain_dims = {1, 0}</text>
+  <text x="60" y="60" font-size="12.5" fill="#52514e">keep dim 0, fix dim 1: 3 communicators of 4</text>
+  <line x1="60" y1="96" x2="266" y2="96" stroke="#2a78d6" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="274" y="100" font-size="12" fill="#2a78d6" font-family="Menlo, Consolas, monospace">dim 0</text>
+  <rect x="60" y="224" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="82.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">0</text>
+  <text x="82.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,0)</text>
+  <text x="82.0" y="264" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 0</text>
+  <rect x="114" y="224" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="136.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">3</text>
+  <text x="136.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,0)</text>
+  <text x="136.0" y="264" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 1</text>
+  <rect x="168" y="224" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="190.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">6</text>
+  <text x="190.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,0)</text>
+  <text x="190.0" y="264" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 2</text>
+  <rect x="222" y="224" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="244.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">9</text>
+  <text x="244.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,0)</text>
+  <text x="244.0" y="264" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 3</text>
+  <rect x="56" y="220" width="214" height="52" rx="7" fill="none" stroke="#2a78d6" stroke-width="2"/>
+  <text x="278" y="250.0" font-size="11.5" fill="#2a78d6" font-family="Menlo, Consolas, monospace">c1 = 0</text>
+  <rect x="60" y="170" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="82.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">1</text>
+  <text x="82.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,1)</text>
+  <text x="82.0" y="210" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 0</text>
+  <rect x="114" y="170" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="136.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">4</text>
+  <text x="136.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,1)</text>
+  <text x="136.0" y="210" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 1</text>
+  <rect x="168" y="170" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="190.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">7</text>
+  <text x="190.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,1)</text>
+  <text x="190.0" y="210" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 2</text>
+  <rect x="222" y="170" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="244.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">10</text>
+  <text x="244.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,1)</text>
+  <text x="244.0" y="210" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 3</text>
+  <rect x="56" y="166" width="214" height="52" rx="7" fill="none" stroke="#2a78d6" stroke-width="2"/>
+  <text x="278" y="196.0" font-size="11.5" fill="#2a78d6" font-family="Menlo, Consolas, monospace">c1 = 1</text>
+  <rect x="60" y="116" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="82.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">2</text>
+  <text x="82.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,2)</text>
+  <text x="82.0" y="156" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 0</text>
+  <rect x="114" y="116" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="136.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">5</text>
+  <text x="136.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,2)</text>
+  <text x="136.0" y="156" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 1</text>
+  <rect x="168" y="116" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="190.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">8</text>
+  <text x="190.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,2)</text>
+  <text x="190.0" y="156" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 2</text>
+  <rect x="222" y="116" width="44" height="44" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <text x="244.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">11</text>
+  <text x="244.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,2)</text>
+  <text x="244.0" y="156" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">new 3</text>
+  <rect x="56" y="112" width="214" height="52" rx="7" fill="none" stroke="#2a78d6" stroke-width="2"/>
+  <text x="278" y="142.0" font-size="11.5" fill="#2a78d6" font-family="Menlo, Consolas, monospace">c1 = 2</text>
+  <text x="60" y="292" font-size="12" fill="#2a78d6">new rank = c0</text>
+  <text x="430" y="40" font-size="13" fill="#0b0b0b" font-weight="bold" font-family="Menlo, Consolas, monospace">remain_dims = {0, 1}</text>
+  <text x="430" y="60" font-size="12.5" fill="#52514e">keep dim 1, fix dim 0: 4 communicators of 3</text>
+  <line x1="438" y1="268" x2="438" y2="116" stroke="#d97a1e" stroke-width="1.5" marker-end="url(#arro)"/>
+  <text x="438" y="106" font-size="12" fill="#d97a1e" text-anchor="middle" font-family="Menlo, Consolas, monospace">dim 1</text>
+  <rect x="460" y="224" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="482.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">0</text>
+  <text x="482.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,0)</text>
+  <text x="482.0" y="264" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 0</text>
+  <rect x="460" y="170" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="482.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">1</text>
+  <text x="482.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,1)</text>
+  <text x="482.0" y="210" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 1</text>
+  <rect x="460" y="116" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="482.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">2</text>
+  <text x="482.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,2)</text>
+  <text x="482.0" y="156" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 2</text>
+  <rect x="456" y="112" width="52" height="160" rx="7" fill="none" stroke="#d97a1e" stroke-width="2"/>
+  <text x="482.0" y="288" font-size="11.5" fill="#d97a1e" text-anchor="middle" font-family="Menlo, Consolas, monospace">c0 = 0</text>
+  <rect x="514" y="224" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="536.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">3</text>
+  <text x="536.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,0)</text>
+  <text x="536.0" y="264" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 0</text>
+  <rect x="514" y="170" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="536.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">4</text>
+  <text x="536.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,1)</text>
+  <text x="536.0" y="210" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 1</text>
+  <rect x="514" y="116" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="536.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">5</text>
+  <text x="536.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,2)</text>
+  <text x="536.0" y="156" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 2</text>
+  <rect x="510" y="112" width="52" height="160" rx="7" fill="none" stroke="#d97a1e" stroke-width="2"/>
+  <text x="536.0" y="288" font-size="11.5" fill="#d97a1e" text-anchor="middle" font-family="Menlo, Consolas, monospace">c0 = 1</text>
+  <rect x="568" y="224" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="590.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">6</text>
+  <text x="590.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,0)</text>
+  <text x="590.0" y="264" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 0</text>
+  <rect x="568" y="170" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="590.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">7</text>
+  <text x="590.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,1)</text>
+  <text x="590.0" y="210" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 1</text>
+  <rect x="568" y="116" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="590.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">8</text>
+  <text x="590.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,2)</text>
+  <text x="590.0" y="156" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 2</text>
+  <rect x="564" y="112" width="52" height="160" rx="7" fill="none" stroke="#d97a1e" stroke-width="2"/>
+  <text x="590.0" y="288" font-size="11.5" fill="#d97a1e" text-anchor="middle" font-family="Menlo, Consolas, monospace">c0 = 2</text>
+  <rect x="622" y="224" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="644.0" y="242" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">9</text>
+  <text x="644.0" y="253" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,0)</text>
+  <text x="644.0" y="264" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 0</text>
+  <rect x="622" y="170" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="644.0" y="188" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">10</text>
+  <text x="644.0" y="199" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,1)</text>
+  <text x="644.0" y="210" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 1</text>
+  <rect x="622" y="116" width="44" height="44" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="644.0" y="134" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">11</text>
+  <text x="644.0" y="145" font-size="8.5" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,2)</text>
+  <text x="644.0" y="156" font-size="9" fill="#d97a1e" text-anchor="middle" font-weight="bold">new 2</text>
+  <rect x="618" y="112" width="52" height="160" rx="7" fill="none" stroke="#d97a1e" stroke-width="2"/>
+  <text x="644.0" y="288" font-size="11.5" fill="#d97a1e" text-anchor="middle" font-family="Menlo, Consolas, monospace">c0 = 3</text>
+  <text x="460" y="308" font-size="12" fill="#d97a1e">new rank = c1</text>
+  <line x1="40" y1="326" x2="740" y2="326" stroke="#e4e3df" stroke-width="1"/>
+  <text x="40" y="352" font-size="13" fill="#0b0b0b" font-weight="bold">in 3D: a 3 × 3 × 2 grid</text>
+  <line x1="52" y1="446" x2="82" y2="446" stroke="#2a78d6" stroke-width="1.4" marker-end="url(#arrb)"/>
+  <line x1="52" y1="446" x2="70" y2="433" stroke="#d97a1e" stroke-width="1.4" marker-end="url(#arro)"/>
+  <line x1="52" y1="446" x2="52" y2="412" stroke="#8a5cc2" stroke-width="1.4" marker-end="url(#arrp)"/>
+  <text x="86" y="450" font-size="9.5" fill="#2a78d6" font-family="Menlo, Consolas, monospace">0</text>
+  <text x="73" y="431" font-size="9.5" fill="#d97a1e" font-family="Menlo, Consolas, monospace">1</text>
+  <text x="52" y="408" font-size="9.5" fill="#8a5cc2" text-anchor="middle" font-family="Menlo, Consolas, monospace">dim 2</text>
+  <polygon points="120.0,444.0 146.0,444.0 159.0,435.0 133.0,435.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="146.0,444.0 172.0,444.0 185.0,435.0 159.0,435.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="172.0,444.0 198.0,444.0 211.0,435.0 185.0,435.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="133.0,435.0 159.0,435.0 172.0,426.0 146.0,426.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="159.0,435.0 185.0,435.0 198.0,426.0 172.0,426.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="185.0,435.0 211.0,435.0 224.0,426.0 198.0,426.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="146.0,426.0 172.0,426.0 185.0,417.0 159.0,417.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="172.0,426.0 198.0,426.0 211.0,417.0 185.0,417.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="198.0,426.0 224.0,426.0 237.0,417.0 211.0,417.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="120.0,444.0 198.0,444.0 237.0,417.0 159.0,417.0" fill="none" stroke="#8a5cc2" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="233.5" y="434.5" font-size="11" fill="#8a5cc2" font-family="Menlo, Consolas, monospace">c2 = 0</text>
+  <polygon points="120.0,394.0 146.0,394.0 159.0,385.0 133.0,385.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="146.0,394.0 172.0,394.0 185.0,385.0 159.0,385.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="172.0,394.0 198.0,394.0 211.0,385.0 185.0,385.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="133.0,385.0 159.0,385.0 172.0,376.0 146.0,376.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="159.0,385.0 185.0,385.0 198.0,376.0 172.0,376.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="185.0,385.0 211.0,385.0 224.0,376.0 198.0,376.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="146.0,376.0 172.0,376.0 185.0,367.0 159.0,367.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="172.0,376.0 198.0,376.0 211.0,367.0 185.0,367.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="198.0,376.0 224.0,376.0 237.0,367.0 211.0,367.0" fill="#ece3f7" stroke="#8a5cc2" stroke-width="0.8"/>
+  <polygon points="120.0,394.0 198.0,394.0 237.0,367.0 159.0,367.0" fill="none" stroke="#8a5cc2" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="233.5" y="384.5" font-size="11" fill="#8a5cc2" font-family="Menlo, Consolas, monospace">c2 = 1</text>
+  <text x="290" y="384" font-size="12.5" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">{1, 1, 0}</text>
+  <text x="290" y="404" font-size="12" fill="#52514e">planes:</text>
+  <text x="290" y="420" font-size="12" fill="#52514e">2 communicators</text>
+  <text x="290" y="436" font-size="12" fill="#52514e">of 3 × 3</text>
+  <polygon points="445.0,444.0 471.0,444.0 484.0,435.0 458.0,435.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="471.0,444.0 497.0,444.0 510.0,435.0 484.0,435.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="497.0,444.0 523.0,444.0 536.0,435.0 510.0,435.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="458.0,435.0 484.0,435.0 497.0,426.0 471.0,426.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="484.0,435.0 510.0,435.0 523.0,426.0 497.0,426.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="510.0,435.0 536.0,435.0 549.0,426.0 523.0,426.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="471.0,426.0 497.0,426.0 510.0,417.0 484.0,417.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="497.0,426.0 523.0,426.0 536.0,417.0 510.0,417.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <polygon points="523.0,426.0 549.0,426.0 562.0,417.0 536.0,417.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8"/>
+  <line x1="490.5" y1="421.5" x2="490.5" y2="371.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="490.5" cy="421.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="516.5" y1="421.5" x2="516.5" y2="371.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="516.5" cy="421.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="542.5" y1="421.5" x2="542.5" y2="371.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="542.5" cy="421.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="477.5" y1="430.5" x2="477.5" y2="380.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="477.5" cy="430.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="503.5" y1="430.5" x2="503.5" y2="380.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="503.5" cy="430.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="529.5" y1="430.5" x2="529.5" y2="380.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="529.5" cy="430.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="464.5" y1="439.5" x2="464.5" y2="389.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="464.5" cy="439.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="490.5" y1="439.5" x2="490.5" y2="389.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="490.5" cy="439.5" r="2.6" fill="#8a5cc2"/>
+  <line x1="516.5" y1="439.5" x2="516.5" y2="389.5" stroke="#8a5cc2" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="516.5" cy="439.5" r="2.6" fill="#8a5cc2"/>
+  <polygon points="445.0,394.0 471.0,394.0 484.0,385.0 458.0,385.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="471.0,394.0 497.0,394.0 510.0,385.0 484.0,385.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="497.0,394.0 523.0,394.0 536.0,385.0 510.0,385.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="458.0,385.0 484.0,385.0 497.0,376.0 471.0,376.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="484.0,385.0 510.0,385.0 523.0,376.0 497.0,376.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="510.0,385.0 536.0,385.0 549.0,376.0 523.0,376.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="471.0,376.0 497.0,376.0 510.0,367.0 484.0,367.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="497.0,376.0 523.0,376.0 536.0,367.0 510.0,367.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <polygon points="523.0,376.0 549.0,376.0 562.0,367.0 536.0,367.0" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="0.8" fill-opacity="0.55"/>
+  <circle cx="464.5" cy="389.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="490.5" cy="389.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="516.5" cy="389.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="477.5" cy="380.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="503.5" cy="380.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="529.5" cy="380.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="490.5" cy="371.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="516.5" cy="371.5" r="2.6" fill="#8a5cc2"/>
+  <circle cx="542.5" cy="371.5" r="2.6" fill="#8a5cc2"/>
+  <text x="600" y="384" font-size="12.5" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">{0, 0, 1}</text>
+  <text x="600" y="404" font-size="12" fill="#52514e">lines ("pencils"):</text>
+  <text x="600" y="420" font-size="12" fill="#52514e">3 × 3 = 9 communicators</text>
+  <text x="600" y="436" font-size="12" fill="#52514e">of 2</text>
+  <text x="40" y="480" font-size="12" fill="#0b0b0b">Kept dimensions vary inside a sub-communicator, dropped ones are fixed: there is one sub-communicator per combination</text>
+  <text x="40" y="498" font-size="12" fill="#0b0b0b">of the dropped coordinates, and its size is the product of the kept dims. Each sub-communicator is Cartesian again.</text>
+</svg>

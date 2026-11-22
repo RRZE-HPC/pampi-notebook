@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/></marker>
+    <marker id="arro" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97a1e"/></marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a3a29c"/></marker>
+    <marker id="arrp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a5cc2"/></marker>
+    <pattern id="pad" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#fcfcfb"/><line x1="0" y1="0" x2="0" y2="6" stroke="#e4e3df" stroke-width="3"/></pattern>
+  </defs>
+  <rect width="780" height="470" rx="12" fill="#fcfcfb"/>
+  <text x="40" y="32" font-size="13.5" fill="#0b0b0b" font-weight="bold" font-family="Menlo, Consolas, monospace">MPI_Neighbor_alltoall</text>
+  <text x="228" y="32" font-size="12.5" fill="#52514e">a different block for every neighbor (block a→b: from rank a to rank b)</text>
+  <text x="40" y="64" font-size="12.5" fill="#0b0b0b" font-weight="bold">send: block i goes to neighbor i</text>
+  <text x="420" y="64" font-size="12.5" fill="#0b0b0b" font-weight="bold">receive: the block from neighbor i lands in slot i</text>
+  <line x1="400" y1="50" x2="400" y2="400" stroke="#e4e3df" stroke-width="1"/>
+  <rect x="163.0" y="165.0" width="84" height="50" rx="4" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2.2"/>
+  <text x="205" y="182" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 8 (me)</text>
+  <rect x="170.2" y="191" width="69.6" height="18" rx="3" fill="#f1f0ee" stroke="#52514e" stroke-width="1.2"/>
+  <text x="205" y="204" font-size="11" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">4 blocks</text>
+  <rect x="45.0" y="165.0" width="84" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="87" y="182" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 5</text>
+  <rect x="70.2" y="191" width="33.6" height="18" rx="3" fill="#fcfcfb" stroke="#2a78d6" stroke-width="1.2"/>
+  <text x="87" y="204" font-size="11" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">8→5</text>
+  <text x="87" y="229.0" font-size="10.5" fill="#2a78d6" text-anchor="middle">stores it in slot 1</text>
+  <line x1="161.0" y1="190.0" x2="131.0" y2="190.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <rect x="281.0" y="165.0" width="84" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="323" y="182" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 11</text>
+  <rect x="302.6" y="191" width="40.8" height="18" rx="3" fill="#fcfcfb" stroke="#2a78d6" stroke-width="1.2"/>
+  <text x="323" y="204" font-size="11" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">8→11</text>
+  <text x="323" y="229.0" font-size="10.5" fill="#2a78d6" text-anchor="middle">stores it in slot 0</text>
+  <line x1="249.0" y1="190.0" x2="279.0" y2="190.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <rect x="163.0" y="245.0" width="84" height="50" rx="4" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="205" y="262" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 7</text>
+  <rect x="188.2" y="271" width="33.6" height="18" rx="3" fill="#fcfcfb" stroke="#d97a1e" stroke-width="1.2"/>
+  <text x="205" y="284" font-size="11" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">8→7</text>
+  <text x="205" y="309.0" font-size="10.5" fill="#d97a1e" text-anchor="middle">stores it in slot 3</text>
+  <line x1="205.0" y1="217.0" x2="205.0" y2="243.0" stroke="#d97a1e" stroke-width="1.8" marker-end="url(#arro)"/>
+  <rect x="145" y="97" width="120" height="26" rx="13" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="205" y="114" font-size="11" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">MPI_PROC_NULL</text>
+  <line x1="205.0" y1="163.0" x2="205" y2="125" stroke="#a3a29c" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrg)"/>
+  <text x="275" y="114" font-size="10.5" fill="#52514e">block 3: not sent</text>
+  <text x="40" y="330" font-size="12.5" fill="#0b0b0b" font-weight="bold">sendbuf of rank 8</text>
+  <rect x="40" y="340" width="78" height="34" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="79.0" y="362.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">8→5</text>
+  <text x="79.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">0: dim 0 −</text>
+  <rect x="122" y="340" width="78" height="34" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="161.0" y="362.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">8→11</text>
+  <text x="161.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">1: dim 0 +</text>
+  <rect x="204" y="340" width="78" height="34" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="243.0" y="362.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">8→7</text>
+  <text x="243.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">2: dim 1 −</text>
+  <rect x="286" y="340" width="78" height="34" rx="3" fill="url(#pad)" stroke="#a3a29c" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="325.0" y="361.0" font-size="11" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">8→top</text>
+  <text x="325.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">3: dim 1 +</text>
+  <rect x="548.0" y="165.0" width="84" height="50" rx="4" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2.2"/>
+  <text x="590" y="182" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 8 (me)</text>
+  <text x="590" y="204" font-size="10.5" fill="#52514e" text-anchor="middle">recvbuf</text>
+  <rect x="430.0" y="165.0" width="84" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="472" y="182" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 5</text>
+  <rect x="455.2" y="191" width="33.6" height="18" rx="3" fill="#fcfcfb" stroke="#2a78d6" stroke-width="1.2"/>
+  <text x="472" y="204" font-size="11" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">5→8</text>
+  <text x="472" y="229.0" font-size="10.5" fill="#2a78d6" text-anchor="middle">its block 1</text>
+  <line x1="516.0" y1="190.0" x2="546.0" y2="190.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <rect x="666.0" y="165.0" width="84" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="708" y="182" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 11</text>
+  <rect x="687.6" y="191" width="40.8" height="18" rx="3" fill="#fcfcfb" stroke="#2a78d6" stroke-width="1.2"/>
+  <text x="708" y="204" font-size="11" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">11→8</text>
+  <text x="708" y="229.0" font-size="10.5" fill="#2a78d6" text-anchor="middle">its block 0</text>
+  <line x1="664.0" y1="190.0" x2="634.0" y2="190.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <rect x="548.0" y="245.0" width="84" height="50" rx="4" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="590" y="262" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">rank 7</text>
+  <rect x="573.2" y="271" width="33.6" height="18" rx="3" fill="#fcfcfb" stroke="#d97a1e" stroke-width="1.2"/>
+  <text x="590" y="284" font-size="11" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">7→8</text>
+  <text x="590" y="309.0" font-size="10.5" fill="#d97a1e" text-anchor="middle">its block 3</text>
+  <line x1="590.0" y1="243.0" x2="590.0" y2="217.0" stroke="#d97a1e" stroke-width="1.8" marker-end="url(#arro)"/>
+  <rect x="530" y="97" width="120" height="26" rx="13" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="590" y="114" font-size="11" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">MPI_PROC_NULL</text>
+  <line x1="590" y1="125" x2="590.0" y2="163.0" stroke="#a3a29c" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrg)"/>
+  <text x="420" y="330" font-size="12.5" fill="#0b0b0b" font-weight="bold">recvbuf of rank 8</text>
+  <rect x="420" y="340" width="78" height="34" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="459.0" y="362.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">5→8</text>
+  <text x="459.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">0: dim 0 −</text>
+  <rect x="502" y="340" width="78" height="34" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="541.0" y="362.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">11→8</text>
+  <text x="541.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">1: dim 0 +</text>
+  <rect x="584" y="340" width="78" height="34" rx="3" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="623.0" y="362.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-family="Menlo, Consolas, monospace">7→8</text>
+  <text x="623.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">2: dim 1 −</text>
+  <rect x="666" y="340" width="78" height="34" rx="3" fill="url(#pad)" stroke="#a3a29c" stroke-width="1.2" stroke-dasharray="3 2"/>
+  <text x="705.0" y="361.0" font-size="11" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">−1</text>
+  <text x="705.0" y="389" font-size="10.5" fill="#52514e" text-anchor="middle">3: dim 1 +</text>
+  <line x1="40" y1="414" x2="740" y2="414" stroke="#e4e3df" stroke-width="1"/>
+  <text x="40" y="438" font-size="12" fill="#0b0b0b">MPI_Neighbor_alltoallv/w cut sendbuf and recvbuf into the blocks with counts, displacements (and types), like MPI_Alltoallv/w.</text>
+</svg>

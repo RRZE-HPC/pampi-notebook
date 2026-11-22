@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 604" width="780" height="604" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a78d6"/></marker>
+    <marker id="arro" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97a1e"/></marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a3a29c"/></marker>
+  </defs>
+  <rect width="780" height="604" rx="12" fill="#fcfcfb"/>
+  <text x="40" y="30" font-size="13" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">MPI_Cart_shift(cart, dim, 1, &amp;src, &amp;dst)</text>
+  <text x="375" y="30" font-size="12.5" fill="#52514e">a local query: returns two ranks, moves no data</text>
+  <text x="60" y="62" font-size="13" fill="#0b0b0b" font-weight="bold">inner rank 4 = (1,1)</text>
+  <rect x="60" y="254" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="85.0" y="274" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">0</text>
+  <text x="85.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,0)</text>
+  <rect x="60" y="188" width="50" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="85.0" y="208" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">1</text>
+  <text x="85.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,1)</text>
+  <text x="85.0" y="232" font-size="9.5" fill="#2a78d6" text-anchor="middle" font-weight="bold">src</text>
+  <rect x="60" y="122" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="85.0" y="142" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">2</text>
+  <text x="85.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,2)</text>
+  <rect x="126" y="254" width="50" height="50" rx="4" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="151.0" y="274" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">3</text>
+  <text x="151.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,0)</text>
+  <text x="151.0" y="298" font-size="9.5" fill="#d97a1e" text-anchor="middle" font-weight="bold">src</text>
+  <rect x="126" y="188" width="50" height="50" rx="4" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2.2"/>
+  <text x="151.0" y="208" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">4</text>
+  <text x="151.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,1)</text>
+  <text x="151.0" y="232" font-size="9.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">me</text>
+  <rect x="126" y="122" width="50" height="50" rx="4" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="151.0" y="142" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">5</text>
+  <text x="151.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,2)</text>
+  <text x="151.0" y="166" font-size="9.5" fill="#d97a1e" text-anchor="middle" font-weight="bold">dst</text>
+  <rect x="192" y="254" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="217.0" y="274" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">6</text>
+  <text x="217.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,0)</text>
+  <rect x="192" y="188" width="50" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="217.0" y="208" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">7</text>
+  <text x="217.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,1)</text>
+  <text x="217.0" y="232" font-size="9.5" fill="#2a78d6" text-anchor="middle" font-weight="bold">dst</text>
+  <rect x="192" y="122" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="217.0" y="142" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">8</text>
+  <text x="217.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,2)</text>
+  <rect x="258" y="254" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="283.0" y="274" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">9</text>
+  <text x="283.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,0)</text>
+  <rect x="258" y="188" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="283.0" y="208" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">10</text>
+  <text x="283.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,1)</text>
+  <rect x="258" y="122" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="283.0" y="142" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">11</text>
+  <text x="283.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,2)</text>
+  <line x1="111" y1="213.0" x2="125" y2="213.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <line x1="177" y1="213.0" x2="191" y2="213.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <line x1="151.0" y1="253" x2="151.0" y2="239" stroke="#d97a1e" stroke-width="1.8" marker-end="url(#arro)"/>
+  <line x1="151.0" y1="187" x2="151.0" y2="173" stroke="#d97a1e" stroke-width="1.8" marker-end="url(#arro)"/>
+  <line x1="60" y1="318" x2="308" y2="318" stroke="#2a78d6" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="314" y="322" font-size="12" fill="#2a78d6" font-family="Menlo, Consolas, monospace">dim 0</text>
+  <line x1="44" y1="304" x2="44" y2="122" stroke="#d97a1e" stroke-width="1.5" marker-end="url(#arro)"/>
+  <text x="44" y="114" font-size="12" fill="#d97a1e" text-anchor="middle" font-family="Menlo, Consolas, monospace">dim 1</text>
+  <text x="60" y="348" font-size="12" fill="#2a78d6" font-family="Menlo, Consolas, monospace">dim 0 → src 1, dst 7</text>
+  <text x="60" y="367" font-size="12" fill="#d97a1e" font-family="Menlo, Consolas, monospace">dim 1 → src 3, dst 5</text>
+  <text x="430" y="62" font-size="13" fill="#0b0b0b" font-weight="bold">boundary rank 11 = (3,2)</text>
+  <rect x="430" y="254" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="455.0" y="274" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">0</text>
+  <text x="455.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,0)</text>
+  <rect x="430" y="188" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="455.0" y="208" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">1</text>
+  <text x="455.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,1)</text>
+  <rect x="430" y="122" width="50" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="455.0" y="142" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">2</text>
+  <text x="455.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(0,2)</text>
+  <text x="455.0" y="166" font-size="9.5" fill="#2a78d6" text-anchor="middle" font-weight="bold">dst</text>
+  <rect x="496" y="254" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="521.0" y="274" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">3</text>
+  <text x="521.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,0)</text>
+  <rect x="496" y="188" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="521.0" y="208" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">4</text>
+  <text x="521.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,1)</text>
+  <rect x="496" y="122" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="521.0" y="142" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">5</text>
+  <text x="521.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(1,2)</text>
+  <rect x="562" y="254" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="587.0" y="274" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">6</text>
+  <text x="587.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,0)</text>
+  <rect x="562" y="188" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="587.0" y="208" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">7</text>
+  <text x="587.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,1)</text>
+  <rect x="562" y="122" width="50" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="587.0" y="142" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">8</text>
+  <text x="587.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(2,2)</text>
+  <text x="587.0" y="166" font-size="9.5" fill="#2a78d6" text-anchor="middle" font-weight="bold">src</text>
+  <rect x="628" y="254" width="50" height="50" rx="4" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="653.0" y="274" font-size="15" fill="#52514e" text-anchor="middle" font-weight="bold">9</text>
+  <text x="653.0" y="286" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,0)</text>
+  <rect x="628" y="188" width="50" height="50" rx="4" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1.5"/>
+  <text x="653.0" y="208" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">10</text>
+  <text x="653.0" y="220" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,1)</text>
+  <text x="653.0" y="232" font-size="9.5" fill="#d97a1e" text-anchor="middle" font-weight="bold">src</text>
+  <rect x="628" y="122" width="50" height="50" rx="4" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2.2"/>
+  <text x="653.0" y="142" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">11</text>
+  <text x="653.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(3,2)</text>
+  <text x="653.0" y="166" font-size="9.5" fill="#0b0b0b" text-anchor="middle" font-weight="bold">me</text>
+  <line x1="613" y1="147.0" x2="627" y2="147.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <line x1="653.0" y1="187" x2="653.0" y2="173" stroke="#d97a1e" stroke-width="1.8" marker-end="url(#arro)"/>
+  <rect x="694" y="122" width="50" height="50" rx="4" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="719.0" y="142" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="bold">2</text>
+  <text x="719.0" y="154" font-size="9" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">(4,2)</text>
+  <text x="719.0" y="166" font-size="9.5" fill="#2a78d6" text-anchor="middle" font-weight="bold">= (0,2)</text>
+  <line x1="679" y1="147.0" x2="693" y2="147.0" stroke="#2a78d6" stroke-width="1.8" marker-end="url(#arrb)"/>
+  <text x="719.0" y="186" font-size="10" fill="#2a78d6" text-anchor="middle">wraps</text>
+  <text x="719.0" y="198" font-size="10" fill="#2a78d6" text-anchor="middle">around</text>
+  <rect x="594.0" y="78" width="118" height="24" rx="12" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="653.0" y="94" font-size="11" fill="#52514e" text-anchor="middle" font-family="Menlo, Consolas, monospace">MPI_PROC_NULL</text>
+  <line x1="653.0" y1="121" x2="653.0" y2="103" stroke="#a3a29c" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrg)"/>
+  <text x="659.0" y="116" font-size="9.5" fill="#52514e" font-weight="bold">dst</text>
+  <text x="430" y="348" font-size="12" fill="#2a78d6" font-family="Menlo, Consolas, monospace">dim 0 → src 8, dst 2</text>
+  <text x="590" y="348" font-size="11" fill="#52514e">(periodic: wraps)</text>
+  <text x="430" y="367" font-size="12" fill="#d97a1e" font-family="Menlo, Consolas, monospace">dim 1 → src 10, dst MPI_PROC_NULL</text>
+  <line x1="40" y1="388" x2="740" y2="388" stroke="#e4e3df" stroke-width="1"/>
+  <text x="40" y="414" font-size="13" fill="#0b0b0b" font-weight="bold">the displacement disp</text>
+  <text x="210" y="414" font-size="12.5" fill="#52514e">rank 4 in dim 0 (periodic), i.e. along the row 1, 4, 7, 10 of panel A</text>
+  <text x="40" y="438" font-size="12" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">disp = 1</text>
+  <rect x="40" y="448" width="40" height="36" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="60.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">1</text>
+  <text x="60.0" y="478" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">src</text>
+  <rect x="86" y="448" width="40" height="36" rx="3" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2.2"/>
+  <text x="106.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">4</text>
+  <text x="106.0" y="478" font-size="9" fill="#0b0b0b" text-anchor="middle" font-weight="bold">me</text>
+  <rect x="132" y="448" width="40" height="36" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="152.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">7</text>
+  <text x="152.0" y="478" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">dst</text>
+  <rect x="178" y="448" width="40" height="36" rx="3" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="198.0" y="465" font-size="13" fill="#52514e" text-anchor="middle" font-weight="bold">10</text>
+  <text x="40" y="502" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">src 1, dst 7</text>
+  <text x="290" y="438" font-size="12" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">disp = −1</text>
+  <rect x="290" y="448" width="40" height="36" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="310.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">1</text>
+  <text x="310.0" y="478" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">dst</text>
+  <rect x="336" y="448" width="40" height="36" rx="3" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2.2"/>
+  <text x="356.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">4</text>
+  <text x="356.0" y="478" font-size="9" fill="#0b0b0b" text-anchor="middle" font-weight="bold">me</text>
+  <rect x="382" y="448" width="40" height="36" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="402.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">7</text>
+  <text x="402.0" y="478" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">src</text>
+  <rect x="428" y="448" width="40" height="36" rx="3" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="448.0" y="465" font-size="13" fill="#52514e" text-anchor="middle" font-weight="bold">10</text>
+  <text x="290" y="502" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">src 7, dst 1: swapped</text>
+  <text x="540" y="438" font-size="12" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">disp = 2</text>
+  <rect x="540" y="448" width="40" height="36" rx="3" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="560.0" y="465" font-size="13" fill="#52514e" text-anchor="middle" font-weight="bold">1</text>
+  <rect x="586" y="448" width="40" height="36" rx="3" fill="#fcfcfb" stroke="#0b0b0b" stroke-width="2.2"/>
+  <text x="606.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">4</text>
+  <text x="606.0" y="478" font-size="9" fill="#0b0b0b" text-anchor="middle" font-weight="bold">me</text>
+  <rect x="632" y="448" width="40" height="36" rx="3" fill="#f1f0ee" stroke="#c9c8c2" stroke-width="1.2"/>
+  <text x="652.0" y="465" font-size="13" fill="#52514e" text-anchor="middle" font-weight="bold">7</text>
+  <rect x="678" y="448" width="40" height="36" rx="3" fill="#e3edfa" stroke="#2a78d6" stroke-width="1.5"/>
+  <text x="698.0" y="465" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="bold">10</text>
+  <text x="698.0" y="478" font-size="9" fill="#2a78d6" text-anchor="middle" font-weight="bold">src+dst</text>
+  <text x="540" y="502" font-size="11.5" fill="#52514e" font-family="Menlo, Consolas, monospace">src 10, dst 10 (wrap)</text>
+  <text x="40" y="530" font-size="12" fill="#52514e">In a non-periodic dimension, a neighbor beyond the boundary is MPI_PROC_NULL:</text>
+  <text x="40" y="548" font-size="12" fill="#52514e">e.g. rank 4 in dim 1 with disp = 2 gets src = dst = MPI_PROC_NULL.</text>
+  <text x="40" y="574" font-size="12" fill="#0b0b0b">Why "source" and "dest"? If every rank sends to dst and receives from src (MPI_Sendrecv), the data moves by disp along dim.</text>
+</svg>

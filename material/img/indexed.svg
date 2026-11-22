@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 270" width="780" height="270" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+    <pattern id="pad" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#fcfcfb"/><line x1="0" y1="0" x2="0" y2="6" stroke="#e4e3df" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <rect width="780" height="270" rx="12" fill="#fcfcfb"/>
+  <rect x="60" y="40" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="73.0" y="57" font-size="10" fill="#0b0b0b" text-anchor="middle">0</text>
+  <rect x="88" y="40" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="101.0" y="57" font-size="10" fill="#52514e" text-anchor="middle">1</text>
+  <rect x="116" y="40" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="129.0" y="57" font-size="10" fill="#52514e" text-anchor="middle">2</text>
+  <rect x="144" y="40" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="157.0" y="57" font-size="10" fill="#52514e" text-anchor="middle">3</text>
+  <rect x="172" y="40" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="185.0" y="57" font-size="10" fill="#52514e" text-anchor="middle">4</text>
+  <rect x="200" y="40" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="213.0" y="57" font-size="10" fill="#52514e" text-anchor="middle">5</text>
+  <text x="240" y="57" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">block 0:  blocklengths[0] = 1,  displacements[0] = 0</text>
+  <rect x="60" y="68" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="73.0" y="85" font-size="10" fill="#0b0b0b" text-anchor="middle">6</text>
+  <rect x="88" y="68" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="101.0" y="85" font-size="10" fill="#0b0b0b" text-anchor="middle">7</text>
+  <rect x="116" y="68" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="129.0" y="85" font-size="10" fill="#52514e" text-anchor="middle">8</text>
+  <rect x="144" y="68" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="157.0" y="85" font-size="10" fill="#52514e" text-anchor="middle">9</text>
+  <rect x="172" y="68" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="185.0" y="85" font-size="10" fill="#52514e" text-anchor="middle">10</text>
+  <rect x="200" y="68" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="213.0" y="85" font-size="10" fill="#52514e" text-anchor="middle">11</text>
+  <text x="240" y="85" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">block 1:  blocklengths[1] = 2,  displacements[1] = 6</text>
+  <rect x="60" y="96" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="73.0" y="113" font-size="10" fill="#0b0b0b" text-anchor="middle">12</text>
+  <rect x="88" y="96" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="101.0" y="113" font-size="10" fill="#0b0b0b" text-anchor="middle">13</text>
+  <rect x="116" y="96" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="129.0" y="113" font-size="10" fill="#0b0b0b" text-anchor="middle">14</text>
+  <rect x="144" y="96" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="157.0" y="113" font-size="10" fill="#52514e" text-anchor="middle">15</text>
+  <rect x="172" y="96" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="185.0" y="113" font-size="10" fill="#52514e" text-anchor="middle">16</text>
+  <rect x="200" y="96" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="213.0" y="113" font-size="10" fill="#52514e" text-anchor="middle">17</text>
+  <text x="240" y="113" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">block 2:  blocklengths[2] = 3,  displacements[2] = 12</text>
+  <rect x="60" y="124" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="73.0" y="141" font-size="10" fill="#0b0b0b" text-anchor="middle">18</text>
+  <rect x="88" y="124" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="101.0" y="141" font-size="10" fill="#0b0b0b" text-anchor="middle">19</text>
+  <rect x="116" y="124" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="129.0" y="141" font-size="10" fill="#0b0b0b" text-anchor="middle">20</text>
+  <rect x="144" y="124" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="157.0" y="141" font-size="10" fill="#0b0b0b" text-anchor="middle">21</text>
+  <rect x="172" y="124" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="185.0" y="141" font-size="10" fill="#52514e" text-anchor="middle">22</text>
+  <rect x="200" y="124" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="213.0" y="141" font-size="10" fill="#52514e" text-anchor="middle">23</text>
+  <text x="240" y="141" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">block 3:  blocklengths[3] = 4,  displacements[3] = 18</text>
+  <rect x="60" y="152" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="73.0" y="169" font-size="10" fill="#0b0b0b" text-anchor="middle">24</text>
+  <rect x="88" y="152" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="101.0" y="169" font-size="10" fill="#0b0b0b" text-anchor="middle">25</text>
+  <rect x="116" y="152" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="129.0" y="169" font-size="10" fill="#0b0b0b" text-anchor="middle">26</text>
+  <rect x="144" y="152" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="157.0" y="169" font-size="10" fill="#0b0b0b" text-anchor="middle">27</text>
+  <rect x="172" y="152" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="185.0" y="169" font-size="10" fill="#0b0b0b" text-anchor="middle">28</text>
+  <rect x="200" y="152" width="26" height="26" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="1"/>
+  <text x="213.0" y="169" font-size="10" fill="#52514e" text-anchor="middle">29</text>
+  <text x="240" y="169" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">block 4:  blocklengths[4] = 5,  displacements[4] = 24</text>
+  <rect x="60" y="180" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="73.0" y="197" font-size="10" fill="#0b0b0b" text-anchor="middle">30</text>
+  <rect x="88" y="180" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="101.0" y="197" font-size="10" fill="#0b0b0b" text-anchor="middle">31</text>
+  <rect x="116" y="180" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="129.0" y="197" font-size="10" fill="#0b0b0b" text-anchor="middle">32</text>
+  <rect x="144" y="180" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="157.0" y="197" font-size="10" fill="#0b0b0b" text-anchor="middle">33</text>
+  <rect x="172" y="180" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="185.0" y="197" font-size="10" fill="#0b0b0b" text-anchor="middle">34</text>
+  <rect x="200" y="180" width="26" height="26" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1.5"/>
+  <text x="213.0" y="197" font-size="10" fill="#0b0b0b" text-anchor="middle">35</text>
+  <text x="240" y="197" font-size="12" fill="#52514e" font-family="Menlo, Consolas, monospace">block 5:  blocklengths[5] = 6,  displacements[5] = 30</text>
+  <text x="60" y="234" font-size="12" fill="#0b0b0b" font-family="Menlo, Consolas, monospace">MPI_Type_indexed(6, blocklengths, displacements, MPI_DOUBLE, &amp;tril)</text>
+  <text x="60" y="254" font-size="12" fill="#52514e">row i of the lower triangle is a block of i + 1 elements, starting at element i · 6</text>
+</svg>

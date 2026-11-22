@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" width="860" height="410" font-family="Helvetica, Arial, sans-serif">
+  <title>Latency hiding: a CPU core overlaps a cache miss with the independent instructions of the same thread until its reorder buffer is full and then stalls, SMT adds a second thread; a GPU warp scheduler switches every cycle to another ready warp, so with enough warps the issue slot is never idle</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+    <pattern id="stall" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#f7dcdc"/><line x1="0" y1="0" x2="0" y2="6" stroke="#c8373a" stroke-width="1.2" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="860" height="410" rx="12" fill="#fcfcfb"/>
+  <text x="20" y="26" font-size="13" fill="#0b0b0b" font-weight="bold">CPU core: out-of-order execution (+ SMT)</text>
+  <text x="20" y="52" font-size="11" fill="#52514e">thread 0</text>
+  <rect x="120" y="40" width="51" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="172" y="40" width="12" height="16" rx="2" fill="#2f9a5b" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="185" y="45" width="311" height="6" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="0.8"/>
+  <text x="189" y="37" font-size="10" fill="#2f9a5b">load misses the caches: ~100 ns = 300+ cycles</text>
+  <rect x="185" y="40" width="77" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="263" y="40" width="233" height="16" rx="2" fill="url(#stall)" stroke="#c8373a" stroke-width="1"/>
+  <text x="380" y="52" font-size="10" fill="#c8373a" text-anchor="middle">stall: reorder buffer full</text>
+  <rect x="497" y="40" width="103" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="601" y="40" width="12" height="16" rx="2" fill="#2f9a5b" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="614" y="45" width="207" height="6" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="0.8"/>
+  <rect x="614" y="40" width="64" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="679" y="40" width="142" height="16" rx="2" fill="url(#stall)" stroke="#c8373a" stroke-width="1"/>
+  <text x="20" y="78" font-size="11" fill="#52514e">thread 1 (SMT)</text>
+  <rect x="263" y="66" width="90" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="393" y="66" width="64" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="679" y="66" width="90" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <text x="120" y="104" font-size="10.5" fill="#52514e">independent instructions of the same thread fill the wait (ILP, several misses in flight);</text>
+  <text x="120" y="118" font-size="10.5" fill="#52514e">a second hardware thread fills part of the rest. Prefetchers and caches avoid many misses altogether.</text>
+  <text x="20" y="152" font-size="13" fill="#0b0b0b" font-weight="bold">GPU SM sub-partition: warp scheduler with 8 resident warps</text>
+  <text x="20" y="176" font-size="11" fill="#52514e">warp 0</text>
+  <rect x="120" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="133" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="146" y="169" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="328" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="341" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="354" y="169" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="536" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="549" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="562" y="169" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="744" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="757" y="164" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="770" y="169" width="51" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <text x="20" y="197" font-size="11" fill="#52514e">warp 1</text>
+  <rect x="146" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="159" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="172" y="190" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="354" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="367" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="380" y="190" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="562" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="575" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="588" y="190" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="770" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="783" y="185" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="796" y="190" width="25" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <text x="20" y="218" font-size="11" fill="#52514e">warp 2</text>
+  <rect x="172" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="185" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="198" y="211" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="380" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="393" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="406" y="211" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="588" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="601" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="614" y="211" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="796" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="809" y="206" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <text x="20" y="239" font-size="11" fill="#52514e">warp 3</text>
+  <rect x="198" y="227" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="211" y="227" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="224" y="232" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="406" y="227" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="419" y="227" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="432" y="232" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="614" y="227" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="627" y="227" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="640" y="232" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <text x="20" y="260" font-size="11" fill="#52514e">warp 4</text>
+  <rect x="224" y="248" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="237" y="248" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="250" y="253" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="432" y="248" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="445" y="248" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="458" y="253" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="640" y="248" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="653" y="248" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="666" y="253" width="155" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <text x="20" y="281" font-size="11" fill="#52514e">warp 5</text>
+  <rect x="250" y="269" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="263" y="269" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="276" y="274" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="458" y="269" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="471" y="269" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="484" y="274" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="666" y="269" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="679" y="269" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="692" y="274" width="129" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <text x="20" y="302" font-size="11" fill="#52514e">warp 6</text>
+  <rect x="276" y="290" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="289" y="290" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="302" y="295" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="484" y="290" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="497" y="290" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="510" y="295" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="692" y="290" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="705" y="290" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="718" y="295" width="103" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <text x="20" y="323" font-size="11" fill="#52514e">warp 7</text>
+  <rect x="302" y="311" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="315" y="311" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="328" y="316" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="510" y="311" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="523" y="311" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="536" y="316" width="181" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <rect x="718" y="311" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="731" y="311" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="744" y="316" width="77" height="6" rx="2" fill="#fcfcfb" stroke="#a3a29c" stroke-width="0.8"/>
+  <text x="20" y="352" font-size="11" fill="#0b0b0b" font-weight="bold">issue slot</text>
+  <rect x="120" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="133" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="146" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="159" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="172" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="185" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="198" y="340" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="211" y="340" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="224" y="340" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="237" y="340" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="250" y="340" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="263" y="340" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="276" y="340" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="289" y="340" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="302" y="340" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="315" y="340" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="328" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="341" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="354" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="367" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="380" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="393" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="406" y="340" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="419" y="340" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="432" y="340" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="445" y="340" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="458" y="340" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="471" y="340" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="484" y="340" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="497" y="340" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="510" y="340" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="523" y="340" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="536" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="549" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="562" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="575" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="588" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="601" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="614" y="340" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="627" y="340" width="12" height="16" rx="2" fill="#dcf0e3" stroke="#2f9a5b" stroke-width="1"/>
+  <rect x="640" y="340" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="653" y="340" width="12" height="16" rx="2" fill="#f7dcdc" stroke="#c8373a" stroke-width="1"/>
+  <rect x="666" y="340" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="679" y="340" width="12" height="16" rx="2" fill="#dbf0f3" stroke="#2a9bb0" stroke-width="1"/>
+  <rect x="692" y="340" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="705" y="340" width="12" height="16" rx="2" fill="#efefd6" stroke="#7a7a2a" stroke-width="1"/>
+  <rect x="718" y="340" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="731" y="340" width="12" height="16" rx="2" fill="#f1f0ee" stroke="#52514e" stroke-width="1"/>
+  <rect x="744" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="757" y="340" width="12" height="16" rx="2" fill="#e3edfa" stroke="#2a78d6" stroke-width="1"/>
+  <rect x="770" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="783" y="340" width="12" height="16" rx="2" fill="#ece3f7" stroke="#8a5cc2" stroke-width="1"/>
+  <rect x="796" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <rect x="809" y="340" width="12" height="16" rx="2" fill="#fbe9d6" stroke="#d97a1e" stroke-width="1"/>
+  <line x1="120" y1="366" x2="822" y2="366" stroke="#52514e" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="820" y="380" font-size="10.5" fill="#52514e" text-anchor="end">time (cycles)</text>
+  <text x="120" y="380" font-size="10.5" fill="#52514e">every warp waits for memory most of the time, but in every cycle some warp is ready;</text>
+  <text x="120" y="394" font-size="10.5" fill="#52514e">switching is free: the registers of all resident warps stay in the register file. With fewer warps, slots stay empty.</text>
+</svg>
